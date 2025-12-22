@@ -125,3 +125,54 @@ body {
   margin-top: 30px;
   display: inline-block;
 }
+
+/* ABOUT SECTION */
+
+.about {
+  background: #eafaf5;
+  padding: 100px 80px;
+}
+
+.about-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  background: #7fe3c3;
+  padding: 18px;
+  border-radius: 28px;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 22px;
+  display: block;
+}
+
+.about-text h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.about-text h3 {
+  color: #1fa38a;
+  font-weight: 500;
+  margin: 12px 0 20px;
+}
+
+.about-underline {
+  width: 80px;
+  height: 4px;
+  background: #7fe3c3;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 520px;
+}
