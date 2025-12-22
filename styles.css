@@ -141,6 +141,10 @@ body {
   padding: 100px 80px;
 }
 
+.about.tight {
+  padding-top: 20px;
+}
+
 .about-container {
   display: flex;
   gap: 80px;
