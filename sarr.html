@@ -17,38 +17,217 @@
   </nav>
 </header>
 
-<section class="project-detail">
+<!-- ===================== -->
+<!-- HERO / OVERVIEW -->
+<!-- ===================== -->
 
-  <div class="project-image">
-    <img src="images/search-rescue.jpg" alt="Search and Rescue Robot">
-  </div>
+<section class="project-detail" id="overview">
 
   <div class="project-text">
     <h1>Search and Rescue Robot</h1>
     <div class="underline"></div>
 
     <p>
-      Autonomous mobile robot designed for navigating constrained environments
-      in disaster-response scenarios. The system integrates mechanical design,
-      embedded electronics, and autonomous control.
+      As part of MAE 322: Mechanical Design with Professor Daniel Nosenchuck,
+      I worked in a group of 11 people on an 8-week project to design,
+      manufacture, and automate a SaRR capable of surviving a 1-foot drop test,
+      tracking light, navigating a ramp and chute, breaching a 1-foot wall,
+      and delivering a medical payload to a randomized drop point.
     </p>
-
-    <div class="tag-row">
-      <span>Robotics</span>
-      <span>Embedded Systems</span>
-      <span>Mechanical Design</span>
-    </div>
 
     <p>
-      Key contributions included chassis design, sensor integration, motion
-      control, and autonomy testing. The robot was designed to be modular and
-      rapidly deployable.
+      As Electrical Lead, I designed and assembled the full wiring harnesses
+      for both robots and took point on systems issues during programming,
+      testing, and debugging.
     </p>
 
-    <a class="project-btn back-btn" href="index.html#portfolio">← Back to Projects</a>
+    <div class="buttons">
+      <a class="btn" href="#marsupial">Overview</a>
+      <a class="btn" href="#process-1">Process</a>
+      <a class="btn" href="#demo">Demo</a>
+      <a class="btn" href="#report">Report</a>
+      <a class="btn" href="#people">People</a>
+    </div>
+  </div>
+
+  <div class="project-image">
+    <img src="images/sarr_hero.jpg" alt="Search and Rescue Robot">
   </div>
 
 </section>
+
+<!-- ===================== -->
+<!-- MARSUPIAL DESIGN -->
+<!-- ===================== -->
+
+<section class="about" id="marsupial">
+  <div class="about-container">
+
+    <div class="about-image">
+      <img src="images/motherbot_full.jpg" alt="MotherBot">
+    </div>
+
+    <div class="about-text">
+      <h2>Marsupial Robots: MotherBot and BabyBot</h2>
+
+      <p>
+        Inspired by pouched marsupials, MotherBot and BabyBot work as a team,
+        allowing each subsystem to optimize for different tasks. MotherBot
+        handles the drop test and ramp, then reaches over the wall and places
+        BabyBot on the other side.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-container">
+
+    <div class="about-text">
+      <p>
+        This dual design avoids compromises on durability or stability.
+        MotherBot protects BabyBot during the drop test using a tensioned
+        line so the large moment is applied through the drivetrain rather
+        than the more fragile medkit launcher.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/marsupial_detail.jpg" alt="Marsupial Mechanism">
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== -->
+<!-- PROCESS -->
+<!-- ===================== -->
+
+<section class="portfolio" id="process-1">
+  <h2>The Process</h2>
+
+  <h3>1) Brainstorming</h3>
+  <p>
+    Early days were spent brainstorming, focusing on feasibility,
+    reliability, and uniqueness. A decision matrix helped pare down
+    ideas into a few key choices.
+  </p>
+
+  <img src="images/decision_matrix.png" class="project-image">
+
+  <h3>2) Design</h3>
+  <p>
+    Initial designs were CADded in Creo and iterated aggressively
+    through prototyping and failure.
+  </p>
+
+  <img src="images/cad_designs.jpg" class="project-image">
+
+  <h3>3) Manufacturing</h3>
+  <p>
+    Robots were constructed from laser-cut acrylic, 3D-printed PET,
+    welded steel, and machined aluminum using Princeton’s MAE machine shop.
+  </p>
+
+  <img src="images/manufacturing_1.jpg" class="project-image">
+  <img src="images/manufacturing_2.jpg" class="project-image">
+
+  <h3>4) Electrical & Software</h3>
+  <p>
+    Both robots used a Teensy 4.1. Schematics and wiring harnesses were
+    built in parallel with manufacturing to enable rapid integration.
+  </p>
+
+  <img src="images/wiring_diagram.png" class="project-image">
+  <img src="images/electronics.jpg" class="project-image">
+</section>
+
+<!-- ===================== -->
+<!-- DEMO DAY -->
+<!-- ===================== -->
+
+<section class="portfolio" id="demo">
+  <h2>6) Demo Day!</h2>
+
+  <p>
+    With time up and robots ready, it was time to demo.
+  </p>
+
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <video src="images/demo_chute.mp4" controls></video>
+      <p>Chute Traversal</p>
+    </div>
+
+    <div class="project-card">
+      <video src="images/demo_wall.mp4" controls></video>
+      <p>Wall Breach</p>
+    </div>
+
+    <div class="project-card">
+      <video src="images/demo_medkit.mp4" controls></video>
+      <p>Medkit Delivery</p>
+    </div>
+  </div>
+
+  <p>
+    We were unable to complete the course end-to-end due to motor controller
+    overheating, but both robots successfully completed each task individually.
+  </p>
+</section>
+
+<!-- ===================== -->
+<!-- REPORT -->
+<!-- ===================== -->
+
+<section class="about" id="report">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>Project Report</h2>
+      <p>
+        Full documentation of design decisions, analysis, and testing.
+      </p>
+
+      <a class="btn"
+         href="files/sarr_report.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        View Final Report (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== -->
+<!-- PEOPLE -->
+<!-- ===================== -->
+
+<section class="portfolio" id="people">
+  <h2>People</h2>
+
+  <p>
+    This project was supported by Professor Daniel Nosenchuck, AI Gaillard,
+    Glen Northey, and Frank Ryle.
+  </p>
+
+  <ul>
+    <li>Ella Simmons — Project Manager</li>
+    <li>Wilson Moyer — BabyBot Team & Software Lead</li>
+    <li>Madelyn Smoyer — BabyBot Team</li>
+    <li>Sawooly Li — BabyBot Team</li>
+    <li>Zachary Andrews — BabyBot Team</li>
+    <li>Joseph Roberts — Lifting Mechanism Team</li>
+    <li>Joel Boon — Lifting Mechanism Team</li>
+    <li>Emmanuel Ishola — Lifting Mechanism Team</li>
+    <li>Chimwemwe Chinkuyu — Chassis & Drivetrain Team</li>
+    <li>Stanford Cramer — Chassis & Drivetrain Team</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 George Kopf</p>
+</footer>
 
 </body>
 </html>
