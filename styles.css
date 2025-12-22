@@ -212,3 +212,27 @@ body {
   line-height: 1.6;
   max-width: 520px;
 }
+
+/* Centered image and caption SECTION */
+.process-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.process-feature img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 14px;
+}
+
+.process-feature .caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
