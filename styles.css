@@ -144,8 +144,8 @@ body {
 }
 
 .process-image {
-  flex: 1 1 300px;
-  max-width: 420px;
+  flex: 1 1 450px;     /* was 300px */
+  max-width: 630px;   /* was 420px */
 }
 
 .process-image img {
