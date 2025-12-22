@@ -140,13 +140,15 @@ body {
   gap: 1.5rem;
   margin: 1.5rem 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.project-image {
+.process-image {
   flex: 1 1 300px;
+  max-width: 420px;
 }
 
-.project-image img {
+.process-image img {
   width: 100%;
   height: auto;
   border-radius: 12px;
