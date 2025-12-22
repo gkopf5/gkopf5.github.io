@@ -134,6 +134,25 @@ body {
   display: inline-block;
 }
 
+
+.image-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  flex: 1 1 300px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
 /* ABOUT SECTION */
 
 .about {
