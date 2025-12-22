@@ -149,7 +149,9 @@ body {
 
 .about-image img {
   width: 320px;
+  height: auto;
   border-radius: 22px;
+  object-fit: cover;
   display: block;
 }
 
