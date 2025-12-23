@@ -167,6 +167,10 @@ body {
   padding-top: 20px;
 }
 
+.about.alt {
+  background: #eafaf5;
+  padding-top: 100px;
+}
 .about-container {
   display: flex;
   gap: 80px;
