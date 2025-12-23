@@ -236,3 +236,14 @@ body {
   line-height: 1.4;
 }
 
+.single-video {
+  max-width: 800px;      /* adjust to taste */
+  margin: 40px auto;
+  text-align: center;
+}
+
+.single-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
