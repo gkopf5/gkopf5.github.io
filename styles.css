@@ -237,8 +237,8 @@ body {
 }
 
 .single-video {
-  max-width: 800px;      /* adjust to taste */
-  margin: 40px auto;
+  max-width: 800px;      /* keep it from going ultra-wide */
+  margin: 40px 0;        /* left aligned */
   text-align: left;
 }
 
