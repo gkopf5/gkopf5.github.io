@@ -84,24 +84,26 @@
 
     <div class="about-text">
       <p>
-        This dual design avoids compromises on durability or stability that
-        more typical wall-breach methods require. MotherBot protects BabyBot 
-        during the drop test using a tensioned line so the large moment is 
-        applied through the reinforced drivetrain rather than the more 
-        fragile medkit launcher mechanism.
+        The math behind the optimization algorithm is better referenced in the
+        attached report, but to create a brief overview, a set of fourier modes
+        have parameters which represent the amplitude and period of the pitch
+        and heave of the fin. These discretized vorticity equations can be plugged 
+        into a 2D incompressible Navier Stokes solver and solved using gradient
+        descent. However, our parameter had too many dimensions for traditional methods
+        to be feasible, even with a supercomputer cluster. To combat this, an adjoint
+        system was derived to solve for the gradient cost function. By looping through 
+        the algorithm, we continually output the gradient with respect to our pitch
+        and heave parameters, which are reinserted into the algorithm as inputs.
       </p>
       <p>
-        Choosing a more complex design posed a serious risk in terms of 
-        exposure to more failure points and a higher workload, but our 
-        team felt confident making the choice to move forward. With a 
-        solid project management structure and 11 hands on deck, we 
-        wanted to appropriately challenge ourselves and build a SaRR 
-        that was novel and reliable. 
+        My role in this project focused on cleaning up the algorithm, characterizing 
+        and adjusting initial parameters, and developing and testing a biological baseline for 
+        comparison. 
       </p>
     </div>
 
     <div class="about-image">
-      <img src="images/marsupial_detail.png" alt="Marsupial Mechanism">
+      <img src="images/fish/cycle.png" alt="Math Cycle">
     </div>
 
   </div>
