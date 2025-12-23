@@ -239,7 +239,7 @@ body {
 .single-video {
   max-width: 800px;      /* adjust to taste */
   margin: 40px auto;
-  text-align: center;
+  text-align: left;
 }
 
 .single-video video {
