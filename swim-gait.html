@@ -120,10 +120,13 @@
   <h3>Single Fourier Mode Transformation</h3>
   <p>
     The algorithm was first run with a single fourier mode, which
-    ended up producing around 90% of the final optimization results. 
-    This was very impressive, and indicated either our initial 
+    ended up producing around 90% of the final optimization results.
+    The drag value being calculated here is not truly drag, but rather
+    a measure of inefficiency. As it decreases, our fish loses less
+    energy per stroke. Units are arbitrary. The single fourier mode 
+    performed far better than expected and indicated either our initial 
     guess was very good or the alogrithm is more effective than
-    initially realized at the chosen resolution. 
+    initially hypothesized at the chosen resolution. 
   </p>
 
   <div class="project-image">
@@ -132,7 +135,10 @@
 
   <h3>5 Fourier Mode Transformation</h3>
   <p>
-    Five
+    Inputting the results of our single fourier mode run into five fourier 
+    modes expands the depth of our optimization. We see a marked decrease
+    in drag, although it is an order of magnitude less impactful than 
+    the single fourier mode run was. 
   </p>
   <div class="project-image">
     <img src="images/fish/fish_graphic_5.png" alt="Fish Graphic 5 FT">
@@ -140,7 +146,9 @@
 
   <h3>10 Fourier Mode Transformation</h3>
   <p>
-    Ten
+    Now at ten fourier modes, we see once again the change in drag is 
+    another order of magnitude smaller. The algorithm is basically done 
+    optimizing here, and only runs six cycles before it decides to finish.
   </p>
 
   <div class="project-image">
@@ -149,7 +157,9 @@
 
   <h3>30 Fourier Mode Transformation</h3>
   <p>
-    Thirty
+    Thirty fourier modes basically does nothing to our efficiency. The 
+    program waffles about for a few cycles then ends, indicating the 
+    values input to it were about as efficient as possible.
   </p>
 
   <div class="project-image">
