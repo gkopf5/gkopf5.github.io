@@ -1,3 +1,5 @@
+/* GLOBAL RESET */
+
 * {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
@@ -8,6 +10,8 @@ body {
   background: #fbfbf6;
   color: #0b0f14;
 }
+
+/* HEADER */
 
 .header {
   background: #1fa38a;
@@ -28,6 +32,8 @@ body {
   margin-left: 20px;
   text-decoration: none;
 }
+
+/* HERO */
 
 .hero {
   display: flex;
@@ -64,6 +70,8 @@ body {
   border-radius: 20px;
 }
 
+/* PORTFOLIO */
+
 .portfolio {
   padding: 80px;
 }
@@ -80,17 +88,16 @@ body {
   padding: 20px;
 }
 
-.project-card img {
+.project-card img,
+.project-card video {
   width: 100%;
   border-radius: 14px;
+  display: block;
 }
 
 .project-card video {
-  width: 100%;
-  height: 220px;        /* adjust: 200–260px works well */
+  height: 220px;
   object-fit: cover;
-  border-radius: 14px;
-  display: block;
 }
 
 .project-btn {
@@ -100,6 +107,8 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
+
+/* PROJECT DETAIL */
 
 .project-detail {
   display: flex;
@@ -134,6 +143,7 @@ body {
   display: inline-block;
 }
 
+/* IMAGE ROWS */
 
 .image-row {
   display: flex;
@@ -144,8 +154,8 @@ body {
 }
 
 .process-image {
-  flex: 1 1 300px;     /* was 300px */
-  max-width: 420px;   /* was 420px */
+  flex: 1 1 300px;
+  max-width: 420px;
 }
 
 .process-image img {
@@ -154,8 +164,7 @@ body {
   border-radius: 12px;
 }
 
-
-/* ABOUT SECTION */
+/* ABOUT SECTIONS */
 
 .about {
   background: #eafaf5;
@@ -163,53 +172,24 @@ body {
 }
 
 .about.tight {
-  background: #eafaf5;
   padding-top: 20px;
 }
 
 .about.alt {
-  background: #eafaf5;
   padding-top: 100px;
 }
+
+/* DEFAULT ABOUT LAYOUT (FLEX — SAFE FOR ALL SECTIONS) */
+
 .about-container {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  grid-template-areas:
-    "text image1 image2"
-    ". caption caption";
+  display: flex;
   gap: 80px;
-  align-items: start;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.about-image {
-  background: #7fe3c3;
-  padding: 18px;
-  border-radius: 28px;
-}
-
-.about-image img {
-  width: 320px;
-  height: auto;
-  border-radius: 22px;
-  object-fit: cover;
-  display: block;
-}
-
-.about-image.big {
-  background: #7fe3c3;
-  padding: 45px;        /* 18 * 2.5 */
-  border-radius: 70px;  /* 28 * 2.5 */
-}
-
-.about-image.big img {
-  width: 800px;         /* 320 * 2.5 */
-  height: auto;
-  border-radius: 55px;  /* 22 * 2.5 */
-  object-fit: cover;
-  display: block;
-}
+/* ABOUT TEXT */
 
 .about-text h2 {
   font-size: 48px;
@@ -235,27 +215,87 @@ body {
   max-width: 520px;
 }
 
-.about-text {
+/* ABOUT IMAGES */
+
+.about-image {
+  background: #7fe3c3;
+  padding: 18px;
+  border-radius: 28px;
+}
+
+.about-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 22px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image.big {
+  padding: 45px;
+  border-radius: 70px;
+}
+
+.about-image.big img {
+  width: 800px;
+  border-radius: 55px;
+}
+
+/* ===============================
+   DUAL IMAGE + CAPTION VARIANT
+   (ONLY AFFECTS THIS SECTION)
+   =============================== */
+
+.about-container.dual-images {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-areas:
+    "text image1 image2"
+    ". caption caption";
+  gap: 80px;
+  align-items: start;
+}
+
+.about-container.dual-images .about-text {
   grid-area: text;
 }
 
-.about-image:nth-of-type(1) {
+.about-container.dual-images .about-image:nth-of-type(1) {
   grid-area: image1;
 }
 
-.about-image:nth-of-type(2) {
+.about-container.dual-images .about-image:nth-of-type(2) {
   grid-area: image2;
 }
 
-.image-caption {
+.about-container.dual-images .image-caption {
   grid-area: caption;
   text-align: center;
   font-size: 0.9rem;
   color: #555;
-  margin-top: -20px; /* pulls caption closer to images */
+  margin-top: -20px;
 }
 
-/* Centered image and caption SECTION */
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container.dual-images {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text"
+      "image1"
+      "image2"
+      "caption";
+    gap: 40px;
+  }
+}
+
+/* CENTERED IMAGE + CAPTION (OTHER SECTIONS) */
+
 .process-feature {
   display: flex;
   flex-direction: column;
@@ -278,9 +318,11 @@ body {
   line-height: 1.4;
 }
 
+/* SINGLE VIDEO */
+
 .single-video {
-  max-width: 800px;      /* keep it from going ultra-wide */
-  margin: 40px 0;        /* left aligned */
+  max-width: 800px;
+  margin: 40px 0;
   text-align: left;
 }
 
