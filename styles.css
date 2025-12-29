@@ -172,9 +172,13 @@ body {
   padding-top: 100px;
 }
 .about-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-areas:
+    "text image1 image2"
+    ". caption caption";
   gap: 80px;
-  align-items: center;
+  align-items: start;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -229,6 +233,26 @@ body {
   font-size: 17px;
   line-height: 1.6;
   max-width: 520px;
+}
+
+.about-text {
+  grid-area: text;
+}
+
+.about-image:nth-of-type(1) {
+  grid-area: image1;
+}
+
+.about-image:nth-of-type(2) {
+  grid-area: image2;
+}
+
+.image-caption {
+  grid-area: caption;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -20px; /* pulls caption closer to images */
 }
 
 /* Centered image and caption SECTION */
