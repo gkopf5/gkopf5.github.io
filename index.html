@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-background">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Kopf V — Robotics & Controls</title>
+    <meta
+      name="description"
+      content="Robotics, controls, and bioinspired design projects by George Kopf V, a Princeton University senior with a Robotics minor."
+    />
+    <meta name="theme-color" content="#f7f4ee" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/theme.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: 'oklch(var(--background) / <alpha-value>)',
+              foreground: 'oklch(var(--foreground) / <alpha-value>)',
+              card: 'oklch(var(--card) / <alpha-value>)',
+              'card-foreground': 'oklch(var(--card-foreground) / <alpha-value>)',
+              primary: 'oklch(var(--primary) / <alpha-value>)',
+              'primary-foreground': 'oklch(var(--primary-foreground) / <alpha-value>)',
+              secondary: 'oklch(var(--secondary) / <alpha-value>)',
+              'secondary-foreground': 'oklch(var(--secondary-foreground) / <alpha-value>)',
+              muted: 'oklch(var(--muted) / <alpha-value>)',
+              'muted-foreground': 'oklch(var(--muted-foreground) / <alpha-value>)',
+              accent: 'oklch(var(--accent) / <alpha-value>)',
+              'accent-foreground': 'oklch(var(--accent-foreground) / <alpha-value>)',
+              border: 'oklch(var(--border) / <alpha-value>)',
+              input: 'oklch(var(--input) / <alpha-value>)',
+              ring: 'oklch(var(--ring) / <alpha-value>)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+            },
+            borderRadius: {
+              sm: '0.225rem',
+              md: '0.3rem',
+              lg: '0.375rem',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="min-h-screen font-sans antialiased">
+    <!-- Header -->
+    <header
+      id="site-header"
+      class="sticky top-0 z-50 border-b border-transparent transition-colors"
+    >
+      <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+        <a href="#top" class="group flex items-center gap-2.5">
+          <span
+            class="grid h-7 w-7 place-items-center rounded-sm border border-border bg-primary/10 font-mono text-xs font-medium text-primary"
+            >GK</span
+          >
+          <span class="font-mono text-sm font-medium tracking-tight">George Kopf V</span>
+        </a>
+        <nav class="flex items-center gap-1">
+          <a href="#work" class="rounded-sm px-3 py-2 font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">Work</a>
+          <a href="#about" class="rounded-sm px-3 py-2 font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">About</a>
+          <a href="#contact" class="rounded-sm px-3 py-2 font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="top" class="relative overflow-hidden border-b border-border">
+        <div
+          aria-hidden="true"
+          class="pointer-events-none absolute inset-0 opacity-[0.4]"
+          style="
+            background-image: linear-gradient(to right, oklch(var(--border)) 1px, transparent 1px),
+              linear-gradient(to bottom, oklch(var(--border)) 1px, transparent 1px);
+            background-size: 32px 32px;
+            -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 40%, transparent 100%);
+            mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 40%, transparent 100%);
+          "
+        ></div>
+
+        <div class="relative mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 pb-20 pt-20 md:grid-cols-[1fr_auto] md:items-start md:gap-12 md:pt-28">
+          <div class="order-2 md:order-1">
+          <div class="mb-6 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            <span class="inline-flex h-1.5 w-1.5 animate-pulse rounded-full bg-primary"></span>
+            Open to internships &amp; new-grad roles
+          </div>
+
+          <h1 class="max-w-3xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+            George Kopf V
+            <span class="mt-2 block text-primary">Robotics &amp; Controls</span>
+          </h1>
+
+          <p id="hero-intro" class="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg"></p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#work"
+              class="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              View my work
+              <span data-icon="arrowUpRight" data-cls="size-4"></span>
+            </a>
+            <a
+              id="hero-resume"
+              href="resume.pdf"
+              class="inline-flex h-11 items-center rounded-md border border-border bg-transparent px-6 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            >
+              Résumé
+            </a>
+            <div class="ml-1 flex items-center gap-1">
+              <a
+                id="hero-linkedin"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                class="grid size-10 place-items-center rounded-sm border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+              ></a>
+            </div>
+          </div>
+
+          <dl id="hero-stats" class="mt-14 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-md border border-border bg-border sm:grid-cols-3"></dl>
+          </div>
+
+          <div class="order-1 md:order-2">
+            <figure class="relative w-40 sm:w-52 md:w-56">
+              <div class="relative overflow-hidden rounded-md border border-border bg-card">
+                <div class="aspect-[4/5] w-full">
+                  <img
+                    id="hero-portrait"
+                    alt="Portrait of George Kopf V"
+                    class="h-full w-full object-cover"
+                  />
+                  <div
+                    id="hero-portrait-fallback"
+                    class="absolute inset-0 grid place-items-center bg-muted text-center"
+                  >
+                    <div class="px-4">
+                      <span data-icon="user" data-cls="mx-auto size-8 text-muted-foreground"></span>
+                      <p class="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                        Add portrait
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="mt-2 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                <span class="h-px w-4 bg-primary"></span>
+                George Kopf V
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="work" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-20 md:py-28">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-primary">
+            <span>01</span>
+            <span class="h-px w-8 bg-border"></span>
+            <span class="text-muted-foreground">Selected Work</span>
+          </div>
+          <h2 class="mt-4 text-balance text-2xl font-semibold tracking-tight md:text-3xl">
+            Projects I&apos;ve designed and built
+          </h2>
+        </div>
+
+        <div id="projects-grid" class="mt-12 grid gap-6 sm:grid-cols-2"></div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="scroll-mt-20 border-y border-border bg-secondary/40">
+        <div class="mx-auto max-w-5xl px-6 py-20 md:py-28">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              <span>02</span>
+              <span class="h-px w-8 bg-border"></span>
+              <span class="text-muted-foreground">About</span>
+            </div>
+            <h2 class="mt-4 text-balance text-2xl font-semibold tracking-tight md:text-3xl">
+              From dynamics model to a robot that moves
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-12 md:grid-cols-[1fr_1.2fr]">
+            <div class="space-y-4 text-pretty text-base leading-relaxed text-muted-foreground">
+              <p>
+                I gravitate toward the messy middle of robotics — where the dynamics model meets the physical robot. My
+                coursework covers control systems, signals, and mechatronics, but I learn the most when a controller has
+                to survive contact with the real world.
+              </p>
+              <p>
+                A lot of my work is bioinspired: swimming, flying, and folding robots that borrow their locomotion from
+                biology, alongside optimal-control and autonomy projects on scale vehicles. I&apos;m looking for an
+                internship or new-grad role in robotics, controls, or autonomy where I can own a system from model to
+                hardware bring-up.
+              </p>
+            </div>
+
+            <div id="skills-grid" class="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-20 md:py-28">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-primary">
+            <span>03</span>
+            <span class="h-px w-8 bg-border"></span>
+            <span class="text-muted-foreground">Contact</span>
+          </div>
+          <h2 class="mt-4 text-balance text-2xl font-semibold tracking-tight md:text-3xl">
+            Let&apos;s build something that works
+          </h2>
+        </div>
+
+        <p class="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground">
+          I&apos;m actively looking for electrical engineering internships and new-grad opportunities. If you have a
+          role, a project, or just want to talk shop, my inbox is open.
+        </p>
+
+        <div class="mt-8">
+          <a
+            id="contact-cta"
+            href="#"
+            class="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Get in touch
+            <span data-icon="arrowUpRight" data-cls="size-4"></span>
+          </a>
+        </div>
+
+        <div id="contact-grid" class="mt-12 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-3"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-border">
+      <div class="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 px-6 py-8 sm:flex-row sm:items-center">
+        <p id="footer-copy" class="font-mono text-xs text-muted-foreground"></p>
+        <p class="font-mono text-xs text-muted-foreground">Designed &amp; soldered in Princeton, NJ</p>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/shared.js"></script>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
