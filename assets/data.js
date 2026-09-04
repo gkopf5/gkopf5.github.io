@@ -53,19 +53,19 @@ window.PORTFOLIO = {
       timeline: 'Feb 2026 - Present · Research project',
       role: 'Independent Work Project & Thesis',
       overview: [
-        'The Exocoetidae family of flying fish is famous for its members’ fantastical ability to leap from the waves and glide vast distances. These fish engage in complex and powerful fluid interactions near the water's surface but are very difficult to study using traditional natural biology methods. To investigate the physical principles behind taxiing behaviors in flying fish, we develop a robotic model organism (RMO) of a flying fish designed to replicate this hard-to-study behavior in a controlled setting. The RMO focuses heavily on body morphology to study flow dynamics, focusing on anatomical fidelity. Field data and morphological analysis of actual fish samples were used to develop an accurate representation of the flying fish. The purpose of this project is to integrate electrical design elements to improve the functionality of the RMO as a bio-relevant tool via untethering and remote-control, focusing on controllable caudal and pectoral fins for swimming and taxiing. Here, we were able to successfully integrate electrical control and demonstrate tether-less swimming at higher DoF, trading raw swimming power for precision control. The RMO has wireless connectivity and internal positional sensing, allowing accelerometer and gyroscope data to be exported from the fish onto a computer remotely teleoperating the RMO, where motor speed and sensor configurations can be controlled. The RMO can swim at up to 11 cm/s at a tail beat frequency of 2 Hz, as well as deploy pectoral fins to stabilize swimming gait and engage in turning.',
+        'The purpose of this project is to integrate electrical design elements to improve the functionality of the RMO as a bio-relevant tool via untethering and remote-control, focusing on controllable caudal and pectoral fins for swimming and taxiing. Here, we were able to successfully integrate electrical control and demonstrate tether-less swimming at higher DoF, trading raw swimming power for precision control. The RMO has wireless connectivity and internal positional sensing, allowing accelerometer and gyroscope data to be exported from the fish onto a computer remotely teleoperating the RMO, where motor speed and sensor configurations can be controlled. The RMO can swim at up to 11 cm/s at a tail beat frequency of 2 Hz, as well as deploy pectoral fins to stabilize swimming gait and engage in turning.',
       ],
       highlights: [
-        'Servo-actuated folding wing mechanism that stows for swimming and locks for glide.',
-        'Water-to-air transition controller sequencing thrust, pitch, and deployment.',
-        'Lightweight carbon-fiber body under 500 g to keep launch energy low.',
-        'Iterative CAD prototyping validated against launch trials in a test tank.',
+        'Servo-actuated folding pectoral fin mechanism that doubles as deployable gliding wings and actuatable swimming fins for rotational adjustment.',
+        'Lightweight AeroPLA body under 250 g to keep launch energy low.',
+        'Iterative CAD prototyping and space-limited circuit design.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Biomechanics study', detail: 'Studied flying-fish gait and launch kinematics to set design targets for thrust and glide ratio.' },
-        { phase: 'Phase 2', title: 'Mechanism design', detail: 'Designed and 3D-printed the folding wing mechanism and propulsion layout in CAD.' },
-        { phase: 'Phase 3', title: 'Transition control', detail: 'Developed the launch sequence coordinating thrust, pitch, and wing deployment timing.' },
-        { phase: 'Phase 4', title: 'Test-tank trials', detail: 'Ran repeated launch trials, measured glide distance, and iterated on the deployment timing.' },
+        { phase: 'Phase 1', title: 'Biomechanics study - Feb 2026', detail: 'Studied flying-fish gait and morphology to determine design goals for RMO.' },
+        { phase: 'Phase 2', title: 'Electrical integration - Mar, Apr 2026', detail: 'Designed and implemented microcontroller circuitry and custom PCB to operate the RMO remotely on battery power.' },
+        { phase: 'Phase 3', title: 'Test-tank trials - May 2026', detail: 'Ran repeated swimming trials to characterize RMO.' },
+        { phase: 'Phase 4', title: 'Pectoral fin deployment - Summer 2026', detail: 'Developed the launch sequence coordinating thrust, pitch, and wing deployment timing.' },
+        { phase: 'Phase 5', title: 'Test-tank trials', detail: 'Ran repeated launch trials, measured glide distance, and iterated on the deployment timing.' },
       ],
       report: { title: 'Design & Trial Report', file: 'reports/flying-fish.pdf', pages: '22 pages', size: 'PDF' },
       gallery: [
