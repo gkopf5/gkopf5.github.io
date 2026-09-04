@@ -42,19 +42,18 @@ window.PORTFOLIO = {
       index: '01',
       title: 'Bioinspired Flying Fish RMO',
       summary:
-        'A robotic multi-modal object (RMO) inspired by flying fish, able to swim, launch from the water surface, and glide, with folding wings and a coordinated transition controller.',
-      image: 'projects/flying-fish.png',
-      tags: ['Bioinspired', 'Mechatronics', 'Controls', 'CAD'],
+        'A Robotic Model Organism (RMO) inspired by Exocotidae flying fish, able to swim in 3 DOF, actuate pectoral fins in 2 DOF, and remotely transmit live telemetry data for experimental analysis.',
+      image: 'projects/FishOpen.jpf',
+      tags: ['Bioinspired', 'Mechatronics', 'Controls', 'Custom PCB', 'CAD'],
       specs: [
-        { label: 'Modes', value: 'Swim / Launch / Glide' },
-        { label: 'Wings', value: 'Folding' },
-        { label: 'Mass', value: '< 500 g' },
+        { label: 'Modes', value: 'Swim / Taxi / Glide' },
+        { label: 'Pectoral Fins', value: 'Deployable / Flexible' },
+        { label: 'Microcontroller', value: 'ESP32 S3' },
       ],
-      timeline: 'Fall 2024 · Research project',
-      role: 'Mechanism design, controls, prototyping',
+      timeline: 'Feb 2026 - Present · Research project',
+      role: 'Independent Work Project & Thesis',
       overview: [
-        'A bioinspired robotic multi-modal object (RMO) that mimics how flying fish transition between water and air. The robot swims to build speed, breaks the surface, and deploys folding wings to glide before re-entry.',
-        'The hard problem is the transition: matching thrust, pitch, and wing deployment timing so the vehicle leaves the water cleanly without stalling. I focused on the mechanism design and the transition control sequence.',
+        'The Exocoetidae family of flying fish is famous for its members’ fantastical ability to leap from the waves and glide vast distances. These fish engage in complex and powerful fluid interactions near the water's surface but are very difficult to study using traditional natural biology methods. To investigate the physical principles behind taxiing behaviors in flying fish, we develop a robotic model organism (RMO) of a flying fish designed to replicate this hard-to-study behavior in a controlled setting. The RMO focuses heavily on body morphology to study flow dynamics, focusing on anatomical fidelity. Field data and morphological analysis of actual fish samples were used to develop an accurate representation of the flying fish. The purpose of this project is to integrate electrical design elements to improve the functionality of the RMO as a bio-relevant tool via untethering and remote-control, focusing on controllable caudal and pectoral fins for swimming and taxiing. Here, we were able to successfully integrate electrical control and demonstrate tether-less swimming at higher DoF, trading raw swimming power for precision control. The RMO has wireless connectivity and internal positional sensing, allowing accelerometer and gyroscope data to be exported from the fish onto a computer remotely teleoperating the RMO, where motor speed and sensor configurations can be controlled. The RMO can swim at up to 11 cm/s at a tail beat frequency of 2 Hz, as well as deploy pectoral fins to stabilize swimming gait and engage in turning.',
       ],
       highlights: [
         'Servo-actuated folding wing mechanism that stows for swimming and locks for glide.',
