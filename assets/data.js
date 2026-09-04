@@ -13,14 +13,14 @@ window.PORTFOLIO = {
     phoneHref: 'tel:+16096082119',
     links: {
       linkedin: 'https://linkedin.com/in/george-kopf-v-a0b895270',
-      resume: 'resume.pdf',
+      resume: 'files/resume.pdf',
     },
   },
 
   skillGroups: [
     {
       title: 'Controls & Autonomy',
-      items: ['Optimal Control (iLQR, LQR)', 'Trajectory Optimization', 'State Estimation & Sensor Fusion', 'Path Planning'],
+      items: ['Optimal Control (iLQR, Q Learning)', 'Trajectory Optimization', 'State Estimation & Sensor Fusion', 'Path Planning'],
     },
     {
       title: 'Robotics',
@@ -28,11 +28,11 @@ window.PORTFOLIO = {
     },
     {
       title: 'Modeling & Tools',
-      items: ['MATLAB & Simulink', 'Python (NumPy, SciPy)', 'CAD & Rapid Prototyping', 'Git & Version Control'],
+      items: ['MATLAB', 'Python & Java', 'CAD (Solidworks, Fusion, NX)', 'Circuits (LTspice, Plecs)', 'Adjoint-Based Gradient Descent Optimization'],
     },
     {
       title: 'Hardware',
-      items: ['Embedded C / C++', 'PCB & Power Electronics', 'Sensors & IMUs', 'Bench Debugging'],
+      items: ['Embedded C / C++', 'PCB & Power Electronics', 'Sensors & Integration', 'Bench Debugging (Oscilloscope, AFG, DMM, PLC)', 'Machining (Lathe, Mill, CNC, Additive Manufacturing)'],
     },
   ],
 
