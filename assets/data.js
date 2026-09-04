@@ -67,7 +67,7 @@ window.PORTFOLIO = {
         { phase: 'Phase 4', title: 'Pectoral fin deployment - Summer 2026', detail: 'Developed the launch sequence coordinating thrust, pitch, and wing deployment timing.' },
         { phase: 'Phase 5', title: 'Test-tank trials', detail: 'Ran repeated launch trials, measured glide distance, and iterated on the deployment timing.' },
       ],
-      report: { title: 'Design & Trial Report', file: 'files/flying-fish.pdf', pages: '34 pages', size: 'PDF' },
+      report: { title: 'Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
       gallery: [
         { src: 'media/flying-fish/1.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
         { src: 'media/flying-fish/2.jpg', caption: 'Wings deployed and locked for the glide phase.' },
