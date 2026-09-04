@@ -1,4 +1,4 @@
-// Renders the home page from window.PORTFOLIO
+// Renders the home page from window.PORTFOLIO 
 ;(function () {
   const { profile, projects, skillGroups } = window.PORTFOLIO
 
