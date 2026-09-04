@@ -43,7 +43,7 @@ window.PORTFOLIO = {
       title: 'Bioinspired Flying Fish RMO',
       summary:
         'A Robotic Model Organism (RMO) inspired by Exocotidae flying fish, able to swim in 3 DOF, actuate pectoral fins in 2 DOF, and remotely transmit live telemetry data for experimental analysis.',
-      image: 'projects/FishOpen.jpf',
+      image: 'projects/FishOpen.jpg',
       tags: ['Bioinspired', 'Mechatronics', 'Controls', 'Custom PCB', 'CAD'],
       specs: [
         { label: 'Modes', value: 'Swim / Taxi / Glide' },
