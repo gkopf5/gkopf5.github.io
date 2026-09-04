@@ -203,7 +203,7 @@ window.PORTFOLIO = {
       title: 'CarLab Autonomous Navigation',
       summary:
         'An autonomous navigation stack for a sensor-equipped scale car, fusing LiDAR and camera data for localization and running a real-time path planner on onboard compute.',
-      image: 'projects/carlab-navigation.png',
+      image: 'projects/carlab-navigation.jpg',
       tags: ['Autonomy', 'ROS', 'LiDAR', 'Planning'],
       specs: [
         { label: 'Sensing', value: 'LiDAR + Camera' },
