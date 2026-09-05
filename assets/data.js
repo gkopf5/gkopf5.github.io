@@ -89,7 +89,7 @@ window.PORTFOLIO = {
       title: 'Search and Rescue Robot',
       summary:
         'A tracked ground robot for disaster environments, carrying a camera mast and sensor array to locate survivors and map unstable terrain teleoperated over a wireless link.',
-      image: 'projects/search-rescue-robot.png',
+      image: 'images/wall_breach.jpg',
       tags: ['Robotics', 'Embedded C', 'Sensors', 'Teleop'],
       specs: [
         { label: 'Drive', value: 'Tracked' },
@@ -116,10 +116,10 @@ window.PORTFOLIO = {
       ],
       report: { title: 'System Report', file: 'reports/search-rescue-robot.pdf', pages: '26 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/search-rescue-robot/1.jpg', caption: 'Tracked chassis navigating a mock-rubble course.' },
-        { src: 'media/search-rescue-robot/2.jpg', caption: 'Camera mast and sensor array mounted on the platform.' },
-        { src: 'media/search-rescue-robot/3.jpg', caption: 'Operator view with live video and telemetry overlay.' },
-        { src: 'media/search-rescue-robot/4.jpg', caption: 'Electronics bay with motor drivers and wireless link.' },
+        { src: 'images/sarr_hero.jpg', caption: 'Loaded SaRR on Demo Day!' },
+        { src: 'images/motherbot_full.jpg', caption: 'MotherBot pictured hoisting BabyBot.' },
+        { src: 'images/medkitlaunch_problem.gif', caption: 'Not everything worked right on the first try! Iterative prototyping was the lifeblood of this project.' },
+        { src: 'images/baby_medkit_test.gif', caption: 'Testing BabyBot's updated delivery mechanism.' },
       ],
       video: { src: 'media/search-rescue-robot/demo.mp4', caption: 'Teleoperated run over debris with live video streaming back to the operator.' },
     },
