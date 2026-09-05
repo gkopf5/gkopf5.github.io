@@ -78,10 +78,10 @@ window.PORTFOLIO = {
         { src: 'images/flying-fish/PCB_Good2.png', caption: 'PCB Gerber rendering, includes feedback moderated voltage regulator and motor driver circuitry.' },
         { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
       ],
-      video: [
-        { src: 'media/croppeddry.mp4', caption: 'Dry actuation of pectoral fins.' }, 
-        { src: 'media/croppedopenstraighten.mp4', caption: 'Turning induced by pectoral actuation.' }, 
-      ],
+      video: { src: 'media/search-rescue-robot/demo.mp4', caption: 'Teleoperated run over debris with live video streaming back to the operator.' },
+    },
+      video: 
+        { src: 'media/croppeddry.mp4', caption: 'Dry actuation of pectoral fins.' },  
     },
     {
       id: 'search-rescue-robot',
