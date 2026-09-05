@@ -54,6 +54,7 @@ window.PORTFOLIO = {
       role: 'Independent Work Project & Thesis',
       overview: [
         'The Exocoetidae family of flying fish is famous for its members’ fantastical ability to leap from the waves and glide vast distances. These fish engage in complex and powerful fluid interactions near the surface of the water, but these hydronamics very difficult to study using traditional natural biology methods.',
+        'Test test',
       ],
       highlights: [
         'Servo-actuated folding pectoral fin mechanism that doubles as deployable gliding wings and actuatable swimming fins for rotational adjustment.',
