@@ -64,10 +64,11 @@ window.PORTFOLIO = {
       ],
       milestones: [
         { phase: 'Phase 1', title: 'Biomechanics study - Feb 2026', detail: 'Studied flying-fish gait and morphology to determine design goals for RMO.' },
-        { phase: 'Phase 2', title: 'Electrical integration - Mar, Apr 2026', detail: 'Designed and implemented microcontroller circuitry and custom PCB to operate the RMO remotely on battery power.' },
-        { phase: 'Phase 3', title: 'Test-tank trials - May 2026', detail: 'Ran repeated swimming trials to characterize RMO.' },
-        { phase: 'Phase 4', title: 'Pectoral fin deployment - Summer 2026', detail: 'Developed the launch sequence coordinating thrust, pitch, and wing deployment timing.' },
-        { phase: 'Phase 5', title: 'Test-tank trials', detail: 'Ran repeated launch trials, measured glide distance, and iterated on the deployment timing.' },
+        { phase: 'Phase 2', title: 'Electrical integration - Mar:Apr 2026', detail: 'Designed and implemented microcontroller circuitry and custom PCB to operate the RMO remotely on battery power.' },
+        { phase: 'Phase 3', title: 'Test-tank trials - May 2026', detail: 'Ran repeated swimming trials to characterize RMO swim speed and stability.' },
+        { phase: 'Phase 4', title: 'Pectoral fin deployment - June:July 2026', detail: 'Designed and built deployable pectoral fins with TPU rays and silicon membranes. Servo-driven fishing line tendons actuate ray flexion.' },
+        { phase: 'Phase 5', title: 'Test-tank trials - July 2026', detail: 'Ran characterization trials on swimming behavior using simple pectoral fin actuations.' },
+        { phase: 'Phase 6', title: 'Taxiing Build - Sep:Dec 2026', detail: 'Current work, updating design to be capable of accelerating into biorelevant taxiing behavior.' },
       ],
       report: { title: 'Spring 2026 Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
       gallery: [
@@ -77,7 +78,7 @@ window.PORTFOLIO = {
         { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
         { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
       ],
-      video: { src: 'media/flying-fish/demo.mp4', caption: 'Official Swimming Trials' },
+      video: { src: 'media/flying-fish/demo.mp4', caption: 'Various Swimming Trials' },
     },
     {
       id: 'search-rescue-robot',
