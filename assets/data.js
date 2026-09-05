@@ -43,7 +43,7 @@ window.PORTFOLIO = {
       title: 'Bioinspired Flying Fish RMO',
       summary:
         'A Robotic Model Organism (RMO) inspired by Exocotidae flying fish, able to swim in 3 DOF, actuate pectoral fins in 2 DOF, and remotely transmit live telemetry data for experimental analysis.',
-      image: 'projects/FishOpen.jpg',
+      image: 'images/flying-fish/FishOpen.jpg',
       tags: ['Bioinspired', 'Mechatronics', 'Controls', 'Custom PCB', 'CAD'],
       specs: [
         { label: 'Modes', value: 'Swim / Taxi / Glide' },
@@ -72,8 +72,8 @@ window.PORTFOLIO = {
       ],
       report: { title: 'Spring 2026 Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
       gallery: [
-        { src: 'projects/FishCADPic1.png', caption: 'Solidworks CAD model of pectoral fin deployment and finning mechanism.' },
-        { src: 'projects/FishClosed.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
+        { src: 'images/flying-fish/FishCADPic1.png', caption: 'Solidworks CAD model of pectoral fin deployment and finning mechanism.' },
+        { src: 'images/flying-fish/FishClosed.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
         { src: 'images/flying-fish/FullCircuit.jpg', caption: 'Full circuit schematics for PCB and hard disconnect switch using magnetic-sensitive reed switch and MOSFET.' },
         { src: 'images/flying-fish/PCB_Good.png', caption: 'PCB Gerber rendering, includes feedback moderated voltage regulator and motor driver circuitry.' },
         { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
