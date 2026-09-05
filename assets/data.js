@@ -79,8 +79,8 @@ window.PORTFOLIO = {
         { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
       ],
       video: [
-        { src: 'media/flying-fish1/demo.mp4', caption: 'Various Swimming Trials1' }, 
-        { src: 'media/flying-fish2/demo.mp4', caption: 'Various Swimming Trials2' }, 
+        { src: 'media/croppeddry.mp4', caption: 'Dry actuation of pectoral fins.' }, 
+        { src: 'media/croppedopenstraighten.mp4', caption: 'Turning induced by pectoral actuation.' }, 
       ],
     },
     {
