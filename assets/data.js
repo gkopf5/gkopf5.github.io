@@ -47,7 +47,7 @@ window.PORTFOLIO = {
       tags: ['Bioinspired', 'Mechatronics', 'Controls', 'Custom PCB', 'CAD'],
       specs: [
         { label: 'Modes', value: 'Swim / Taxi / Glide' },
-        { label: 'Pectoral Fins', value: 'Deployable / Flexible' },
+        { label: 'Components', value: 'Custom PCB, DC & Servo Motors, 6 DoF IMU, FPC Antenna' },
         { label: 'Microcontroller', value: 'ESP32 S3' },
       ],
       timeline: 'Feb 2026 - Present · Research project',
