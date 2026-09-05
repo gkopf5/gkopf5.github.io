@@ -74,9 +74,9 @@ window.PORTFOLIO = {
       gallery: [
         { src: 'images/flying-fish/FishCADPic1.png', caption: 'Solidworks CAD model of pectoral fin deployment and finning mechanism.' },
         { src: 'images/flying-fish/FishClosed.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
-        { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
         { src: 'images/flying-fish/FullCircuit2.jpg', caption: 'Full circuit schematics for PCB and hard disconnect switch using magnetic-sensitive reed switch and MOSFET.' },
         { src: 'images/flying-fish/PCB_Good2.png', caption: 'PCB Gerber rendering, includes feedback moderated voltage regulator and motor driver circuitry.' },
+        { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
       ],
       video: { src: 'media/flying-fish/demo.mp4', caption: 'Various Swimming Trials' },
     },
