@@ -69,7 +69,7 @@ window.PORTFOLIO = {
         { phase: 'Phase 4', title: 'Pectoral fin deployment - Summer 2026', detail: 'Developed the launch sequence coordinating thrust, pitch, and wing deployment timing.' },
         { phase: 'Phase 5', title: 'Test-tank trials', detail: 'Ran repeated launch trials, measured glide distance, and iterated on the deployment timing.' },
       ],
-      report: { title: 'Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
+      report: { title: 'Spring 2026 Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
       gallery: [
         { src: 'projects/FishCADPic1.png', caption: 'Solidworks CAD model of pectoral fin deployment and finning mechanism.' },
         { src: 'projects/FishClosed.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
