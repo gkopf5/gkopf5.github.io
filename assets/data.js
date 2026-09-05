@@ -57,9 +57,10 @@ window.PORTFOLIO = {
         'To investigate the physical principles behind taxiing behaviors in flying fish, we develop a robotic model organism (RMO) of a flying fish designed to replicate this hard-to-study behavior in a controlled setting. The RMO focuses heavily on body morphology to study flow dynamics, focusing on anatomical fidelity. Field data and morphological analysis of actual fish samples were used to develop an accurate representation of the flying fish. The purpose of this project is to integrate electrical design elements to improve the functionality of the RMO as a bio-relevant tool via untethering and remote-control, focusing on controllable caudal and pectoral fins for swimming and taxiing. Here, we were able to successfully integrate electrical control and demonstrate tether-less swimming at higher DoF, trading raw swimming power for precision control. The RMO has wireless connectivity and internal positional sensing, allowing accelerometer and gyroscope data to be exported from the fish onto a computer remotely teleoperating the RMO, where motor speed and sensor configurations can be controlled. The RMO can swim at up to 11 cm/s at a tail beat frequency of 2 Hz, as well as deploy pectoral fins to stabilize swimming gait and engage in turning.',
       ],
       highlights: [
+        'Iterative CAD prototyping and space-limited circuit design optimize for weight and volume constraints.',
         'Servo-actuated folding pectoral fin mechanism that doubles as deployable gliding wings and actuatable swimming fins for rotational adjustment.',
-        'Lightweight AeroPLA body under 250 g to keep launch energy low.',
-        'Iterative CAD prototyping and space-limited circuit design.',
+        'Integrated IMU regulates control feedback loop to maintain stability.',
+        'Biologically relevant morphology allows for RMO’s use as a hydronamical model of Exocotidae flying fish in swimming and taxiing.',
       ],
       milestones: [
         { phase: 'Phase 1', title: 'Biomechanics study - Feb 2026', detail: 'Studied flying-fish gait and morphology to determine design goals for RMO.' },
@@ -75,7 +76,7 @@ window.PORTFOLIO = {
         { src: 'media/flying-fish/3.jpg', caption: 'Carbon-fiber body during assembly and mass checks.' },
         { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
       ],
-      video: { src: 'media/flying-fish/demo.mp4', caption: 'Water-to-air launch and glide transition, captured during test-tank trials.' },
+      video: { src: 'media/flying-fish/demo.mp4', caption: 'Official Swimming Trials' },
     },
     {
       id: 'search-rescue-robot',
