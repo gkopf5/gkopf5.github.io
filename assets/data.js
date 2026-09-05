@@ -71,9 +71,10 @@ window.PORTFOLIO = {
       ],
       report: { title: 'Design & Trial Report', file: 'files/Functional_Enhancement_of_a_Bio_Inspired_Flying_Fish_Robotic_Model_Organism.pdf', pages: '34 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/flying-fish/1.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
-        { src: 'media/flying-fish/2.jpg', caption: 'Wings deployed and locked for the glide phase.' },
+        { src: 'projects/FishCADPic1.png', caption: 'Solidworks CAD model of pectoral fin deployment and finning mechanism.' },
+        { src: 'projects/FishClosed.jpg', caption: 'Folding wing mechanism in the stowed swimming configuration.' },
         { src: 'media/flying-fish/3.jpg', caption: 'Carbon-fiber body during assembly and mass checks.' },
+        { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
         { src: 'media/flying-fish/4.jpg', caption: 'Launch trial breaking the surface in the test tank.' },
       ],
       video: { src: 'media/flying-fish/demo.mp4', caption: 'Official Swimming Trials' },
