@@ -20,7 +20,7 @@ window.PORTFOLIO = {
   skillGroups: [
     {
       title: 'Controls & Autonomy',
-      items: ['Optimal Control (iLQR, Q Learning)', 'Trajectory Optimization', 'State Estimation & Sensor Fusion', 'Path Planning'],
+      items: ['Optimal Control (iLQR, Partially Observable MDPs, Q Learning)', 'Trajectory Optimization', 'State Estimation & Sensor Fusion', 'Path Planning'],
     },
     {
       title: 'Robotics',
@@ -53,7 +53,7 @@ window.PORTFOLIO = {
       timeline: 'Feb 2026 - Present · Research project',
       role: 'Independent Work Project & Thesis',
       overview: [
-        'Poopey poopey pie',
+        'The Exocoetidae family of flying fish is famous for its members’ fantastical ability to leap from the waves and glide vast distances. These fish engage in complex and powerful fluid interactions near the water's surface, but these hydronamics very difficult to study using traditional natural biology methods.',
       ],
       highlights: [
         'Servo-actuated folding pectoral fin mechanism that doubles as deployable gliding wings and actuatable swimming fins for rotational adjustment.',
