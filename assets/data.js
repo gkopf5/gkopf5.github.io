@@ -78,7 +78,10 @@ window.PORTFOLIO = {
         { src: 'images/flying-fish/PCB_Good2.png', caption: 'PCB Gerber rendering, includes feedback moderated voltage regulator and motor driver circuitry.' },
         { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
       ],
-      video: { src: 'media/flying-fish/demo.mp4', caption: 'Various Swimming Trials' },
+      video: [
+        { src: 'media/flying-fish/demo.mp4', caption: 'Various Swimming Trials' }, 
+        { src: 'media/flying-fish/demo.mp4', caption: 'Various Swimming Trials' }, 
+      ],
     },
     {
       id: 'search-rescue-robot',
