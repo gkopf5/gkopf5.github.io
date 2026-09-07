@@ -62,19 +62,34 @@
     </section>`
     : ''
 
-  const videoHtml = project.video
+ const videoList = Array.isArray(project.videos)
+    ? project.videos
+    : project.video
+    ? [project.video]
+    : []
+
+  const videoHtml = videoList.length
     ? `
     <section class="mt-14">
-      <h2 class="font-mono text-xs uppercase tracking-widest text-muted-foreground">Video</h2>
-      <figure class="mt-4">
-        <div class="overflow-hidden rounded-lg border border-border bg-black">
-          <video controls playsinline preload="metadata" poster="${project.image}" class="aspect-video w-full">
-            <source src="${project.video.src}" type="video/mp4" />
-            Your browser does not support embedded video.
-          </video>
-        </div>
-        ${project.video.caption ? `<figcaption class="mt-3 text-sm leading-relaxed text-muted-foreground">${window.esc(project.video.caption)}</figcaption>` : ''}
-      </figure>
+      <h2 class="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+        ${videoList.length > 1 ? 'Videos' : 'Video'}
+      </h2>
+      <div class="mt-4 grid gap-6 ${videoList.length > 1 ? 'sm:grid-cols-2' : ''}">
+        ${videoList
+          .map(
+            (vid) => `
+          <figure>
+            <div class="overflow-hidden rounded-lg border border-border bg-black">
+              <video controls playsinline preload="metadata" poster="${vid.poster || project.image}" class="aspect-video w-full">
+                <source src="${vid.src}" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+            </div>
+            ${vid.caption ? `<figcaption class="mt-3 text-sm leading-relaxed text-muted-foreground">${window.esc(vid.caption)}</figcaption>` : ''}
+          </figure>`,
+          )
+          .join('')}
+      </div>
     </section>`
     : ''
 
