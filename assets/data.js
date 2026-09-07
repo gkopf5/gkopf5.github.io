@@ -235,14 +235,13 @@ window.PORTFOLIO = {
         'Swimming-efficiency objective balancing thrust against actuation energy to optimize for effieciency.',
         'Flow-field visualization to interpret the optimized gaits.',
       ],
-      milestones: [],
-     // milestones: [
-     //   { phase: 'Phase 1', title: 'Model formulation', detail: 'Derived the reduced hydrodynamic equations of motion for the ostraciiform swimmer.' },
-      //  { phase: 'Phase 2', title: 'Simulation', detail: 'Implemented and validated the swim simulation against published gait data.' },
-      //  { phase: 'Phase 3', title: 'Optimization', detail: 'Wrapped the model in an optimizer to search gaits maximizing swimming efficiency.' },
-      //  { phase: 'Phase 4', title: 'Analysis', detail: 'Visualized flow fields and characterized the efficiency of the optimized gaits.' },
-      //],
-      report: { title: 'Study & Results Report', file: 'reports/ostraciiform-swim.pdf', pages: '18 pages', size: 'PDF' },
+      milestones: [
+        { phase: 'Week 1-2', title: 'Understanding the Code', detail: 'Spent time studying the simluation and optimization code, the math behind the adjoint-based gradient descent algorithm, and the math involved in Navier Stokes/fluid particle dynamics.' },
+        { phase: 'Week 3-5', title: 'Debugging', detail: 'Adjusted algorithm to improve run times and reduce convergence failures. Lots of minor bugs would cause the program to crash mid-run.' },
+        { phase: 'Week 6-7', title: 'Characterization', detail: 'Ran large array of optimization trails under various initial paremeter conditions to characterize the effective resolution of the optimizer.' },
+        { phase: 'Week 8-9', title: 'Analysis & Presentation', detail: 'Processed large volumes of data using MATLAB to create comprehensive graphs and visualizations of the vorticity fields. Presented work as one of two speakers at an interprogram REU conference.' },
+      ],
+      report: { title: 'Study & Results Report', file: 'files/fish_paper.pdf', pages: '13 pages', size: 'PDF' },
       gallery: [
         { src: 'media/ostraciiform-swim/1.jpg', caption: 'Reduced-order hydrodynamic model schematic.' },
         { src: 'media/ostraciiform-swim/2.jpg', caption: 'Optimization convergence toward an efficient gait.' },
