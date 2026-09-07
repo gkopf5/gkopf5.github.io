@@ -118,7 +118,7 @@ window.PORTFOLIO = {
         { src: 'images/sarr_hero.jpg', caption: 'Loaded SaRR on Demo Day!' },
         { src: 'images/motherbot_full.jpg', caption: 'MotherBot pictured hoisting BabyBot.' },
         { src: 'images/medkitlaunch_problem.gif', caption: 'Not everything worked right on the first try! Iterative prototyping was the lifeblood of this project.' },
-        { src: 'images/baby_medkit_test.gif', caption: 'Testing BabyBot's updated delivery mechanism.' },
+        { src: 'images/baby_medkit_test.gif', caption: 'Testing BabyBot\'s updated delivery mechanism.' },
       ],
       video: { src: 'media/search-rescue-robot/demo.mp4', caption: 'Teleoperated run over debris with live video streaming back to the operator.' },
     },
