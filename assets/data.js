@@ -80,16 +80,18 @@ window.PORTFOLIO = {
       ],
 
       videos: [
-  {
-    src: 'media/croppeddry.mp4',
-    caption: 'Dry actuation of pectoral fins.',
-  },
-  {
-    src: 'media/flying-fish/swim_trial.mp4',
-    caption: 'Tetherless swimming trial at 2 Hz.',
-    poster: 'images/flying-fish/FishTracker.jpg', // Optional: customize preview image per video
-  },
-],
+          {
+           src: 'media/croppeddry.mp4',
+           caption: 'Dry actuation of pectoral fins.',
+          },
+          {
+           src: 'media/flying-fish/swim_trial.mp4',
+           caption: 'Tetherless swimming trial at 2 Hz.',
+           poster: 'images/flying-fish/FishTracker.jpg', // Optional: customize preview image per video
+          },
+      ],
+
+    },
     
     {
       id: 'search-rescue-robot',
