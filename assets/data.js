@@ -83,7 +83,7 @@ window.PORTFOLIO = {
           {
            src: 'media/flying-fish/swimmingBar.mp4',
            caption: 'My initial versions of the RMO had no pectoral fins but could swim effectively with the aid of a buoyant rod.',
-           poster: 'images/flying-fish/FishFlyinFree.png', // Optional: customize preview image per video
+           poster: 'images/flying-fish/FishBody.jpg', // Optional: customize preview image per video
           },
           {
            src: 'media/flying-fish/Lone Swimmer Clip.mp4',
