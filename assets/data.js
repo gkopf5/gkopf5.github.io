@@ -113,7 +113,7 @@ window.PORTFOLIO = {
       image: 'images/wall_breach.jpg',
       tags: ['Robotics', 'Machining', 'Sensors & Feedback', 'Teleop', 'CAD'],
       specs: [
-        { label: 'Drive', value: 'Electrical Lead' },
+        { label: 'Role', value: 'Electrical Lead' },
         { label: 'Components', value: 'DC CIM Motors, CAN Communication Procedures, Finite State programming, 12v Power Harness, Photoresistors & IR Distance Sensors, 3D Prints, Plastic CNC, Metal Machining' },
         { label: 'Microcontroller', value: 'Teensy 4.1' },
       ],
