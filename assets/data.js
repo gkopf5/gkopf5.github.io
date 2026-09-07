@@ -214,7 +214,7 @@ window.PORTFOLIO = {
       index: '04',
       title: 'Ostraciiform Swim Gait Simulation & Optimization',
       summary:
-        'A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an Adjoint-Based Gradient Descent optimizer to find tail-beat gaits that maximize thrust efficiency.',
+        "A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an Adjoint-Based Gradient Descent optimizer to find tail-beat gaits that maximize thrust efficiency.",
       image: 'images/fish/real_fish.png',
       tags: ['Simulation', 'Optimization', 'MATLAB', 'Fluid Dynamics'],
       specs: [
@@ -235,6 +235,7 @@ window.PORTFOLIO = {
         'Swimming-efficiency objective balancing thrust against actuation energy to optimize for effieciency.',
         'Flow-field visualization to interpret the optimized gaits.',
       ],
+      milestones: [],
      // milestones: [
      //   { phase: 'Phase 1', title: 'Model formulation', detail: 'Derived the reduced hydrodynamic equations of motion for the ostraciiform swimmer.' },
       //  { phase: 'Phase 2', title: 'Simulation', detail: 'Implemented and validated the swim simulation against published gait data.' },
