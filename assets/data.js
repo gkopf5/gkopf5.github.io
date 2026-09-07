@@ -144,8 +144,24 @@ window.PORTFOLIO = {
         { src: 'images/medkitlaunch_problem.gif', caption: 'Not everything worked right on the first try! Iterative prototyping was the lifeblood of this project.' },
         { src: 'images/baby_medkit_test.gif', caption: 'Testing BabyBot\'s updated delivery mechanism.' },
       ],
-      video: { src: 'media/search-rescue-robot/demo.mp4', caption: 'Teleoperated run over debris with live video streaming back to the operator.' },
+       videos: [  
+          {
+           youtubeId: '_BIuc2J6lpQ', // your YouTube video ID
+           caption: 'With time up and robots ready, it was time for Demo Day! Here the SaRR successfully navigates the chute.',
+          },
+          {
+           youtubeId: 'KER3P4G4rRA', // your YouTube video ID
+           caption: 'MotherBot raises BabyBot, lifts it over the wall, and safely lowers it down. Wall breach successful!',
+          },
+          {
+           youtubeId: 'WtNiErJ64EE',
+           caption: 'By identifying the light source and tracking towards it, BabyBot successfully delivers the payload to the goal target!',
+          },
+      ],
     },
+
+
+    
     {
       id: 'pocketqube-satellite',
       index: '03',
