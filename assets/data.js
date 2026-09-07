@@ -206,37 +206,41 @@ window.PORTFOLIO = {
       ],
       video: { src: 'media/pocketqube-satellite/demo.mp4', caption: 'EPS power-mode transitions across a simulated eclipse-to-sunlight cycle.' },
     },
+
+
+    
     {
       id: 'ostraciiform-swim',
       index: '04',
       title: 'Ostraciiform Swim Gait Simulation & Optimization',
       summary:
-        'A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an optimizer to find tail-beat gaits that maximize thrust efficiency.',
-      image: 'projects/ostraciiform-swim.png',
+        'A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an Adjoint-Based Gradient Descent optimizer to find tail-beat gaits that maximize thrust efficiency.',
+      image: 'images/fish/real_fish.png',
       tags: ['Simulation', 'Optimization', 'MATLAB', 'Fluid Dynamics'],
       specs: [
-        { label: 'Gait', value: 'Ostraciiform' },
-        { label: 'Method', value: 'Model + Optimizer' },
-        { label: 'Objective', value: 'Efficiency' },
+        { label: 'Optimization Modes', value: 'Efficiency / Thrust' },
+        { label: 'Method', value: 'Fluid Model + Optimizer' },
+        { label: 'System', value: 'Princeton Adroit Supercomputer Cluster' },
       ],
-      timeline: 'Fall 2023 · Research study',
-      role: 'Modeling, optimization, analysis',
+      timeline: 'Summer 2025 · Research Study',
+      role: 'Modeling, Characterization, Analysis',
       overview: [
-        'A computational study of ostraciiform locomotion — the rigid-body, oscillating-tail swimming style of boxfish. The aim was to find tail-beat gaits that trade thrust against energy cost efficiently.',
-        'I built a reduced hydrodynamic model of the swimmer and wrapped it in an optimization loop that searches tail-beat amplitude and frequency for the most efficient forward motion.',
+        "As part of the Kent State University 2025 REU Program, I worked closely with Professor Xuanhong An, using an adjoint-based gradient descent optimization algorithm to optimize the swim gait of stiff-fin Ostraciiform fish. My work focused on three areas: characterization of the algorithm, establishment of a biological baseline swim gait, and optimization tests for comparison against the baseline.",
+        "The optimization algorithm is built around a custom-written CFD program. It simulates the caudal tail fin as a stiff board fixed in place as incompressible fluid is moved across it. The simulation design is twofold: choosing a simplified model allows for the supercomputer cluster to complete full depth optimization runs in a matter of hours instead of days, and the stiff fin can be easily adapted to a robotic model for physical confirmation of simulated results.",
+        "The math behind the optimization algorithm is better referenced in the attached report, but to create a brief overview, a set of fourier modes have parameters which represent the amplitude and period of the pitch and heave of the fin. These discretized vorticity equations can be plugged into a 2D incompressible Navier Stokes solver and solved using gradient descent. However, our parameter had too many dimensions for traditional methods to be feasible, even with a supercomputer cluster. To combat this, an adjoint system was derived to solve for the gradient cost function. By looping through the algorithm, we continually output the gradient with respect to our pitch and heave parameters, which are reinserted into the algorithm as inputs. Eventually, we descend on a local minima (hopefully the true minima) and end the loop.",
       ],
       highlights: [
         'Reduced-order hydrodynamic model of an oscillating-tail swimmer.',
-        'Optimization loop searching tail-beat amplitude and frequency.',
-        'Swimming-efficiency objective balancing thrust against actuation energy.',
+        'Optimization loop adjusting tail-beat amplitude and frequency by adjusting pitch and heave values.',
+        'Swimming-efficiency objective balancing thrust against actuation energy to optimize for effieciency.',
         'Flow-field visualization to interpret the optimized gaits.',
       ],
-      milestones: [
-        { phase: 'Phase 1', title: 'Model formulation', detail: 'Derived the reduced hydrodynamic equations of motion for the ostraciiform swimmer.' },
-        { phase: 'Phase 2', title: 'Simulation', detail: 'Implemented and validated the swim simulation against published gait data.' },
-        { phase: 'Phase 3', title: 'Optimization', detail: 'Wrapped the model in an optimizer to search gaits maximizing swimming efficiency.' },
-        { phase: 'Phase 4', title: 'Analysis', detail: 'Visualized flow fields and characterized the efficiency of the optimized gaits.' },
-      ],
+     // milestones: [
+     //   { phase: 'Phase 1', title: 'Model formulation', detail: 'Derived the reduced hydrodynamic equations of motion for the ostraciiform swimmer.' },
+      //  { phase: 'Phase 2', title: 'Simulation', detail: 'Implemented and validated the swim simulation against published gait data.' },
+      //  { phase: 'Phase 3', title: 'Optimization', detail: 'Wrapped the model in an optimizer to search gaits maximizing swimming efficiency.' },
+      //  { phase: 'Phase 4', title: 'Analysis', detail: 'Visualized flow fields and characterized the efficiency of the optimized gaits.' },
+      //],
       report: { title: 'Study & Results Report', file: 'reports/ostraciiform-swim.pdf', pages: '18 pages', size: 'PDF' },
       gallery: [
         { src: 'media/ostraciiform-swim/1.jpg', caption: 'Reduced-order hydrodynamic model schematic.' },
