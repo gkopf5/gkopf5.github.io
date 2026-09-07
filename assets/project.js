@@ -47,7 +47,7 @@
           <figure class="overflow-hidden rounded-lg border border-border bg-card">
             <div class="relative aspect-[4/3] w-full bg-muted">
               <img src="${g.src}" alt="${window.esc(g.caption)}" loading="lazy"
-                   class="h-full w-full object-cover"
+                   class="h-full w-full object-contain"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
               <div class="absolute inset-0 hidden flex-col items-center justify-center gap-2 text-muted-foreground">
                 ${window.icon('image', 'size-6')}
