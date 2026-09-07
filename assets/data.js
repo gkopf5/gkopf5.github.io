@@ -139,10 +139,14 @@ window.PORTFOLIO = {
       ],
       report: { title: 'Final Design Report', file: 'files/sarr_report.pdf', pages: '60 pages', size: 'PDF' },
       gallery: [
-        { src: 'images/sarr_hero.jpg', caption: 'Loaded SaRR on Demo Day!' },
-        { src: 'images/motherbot_full.jpg', caption: 'MotherBot pictured hoisting BabyBot.' },
+        { src: 'images/cad_design_1.png', caption: "BabyBot's final CAD design in CREO." },
+        { src: 'images/wiring_diagram_1.png', caption: "MotherBot's wiring diagram drawn up in Fritzing." },
+        { src: 'images/baby_electricals.jpg', caption: "BabyBot's naked wiring harness in place." },
         { src: 'images/medkitlaunch_problem.gif', caption: 'Not everything worked right on the first try! Iterative prototyping was the lifeblood of this project.' },
         { src: 'images/baby_medkit_test.gif', caption: 'Testing BabyBot\'s updated delivery mechanism.' },
+        { src: 'images/motherbot_full.jpg', caption: 'MotherBot pictured hoisting BabyBot.' },
+        { src: 'images/wall_test.png', caption: 'Testing and debugging the delivery mechanism were critical to minimizing failure modes.' },
+        { src: 'images/sarr_hero.jpg', caption: 'Loaded SaRR on Demo Day!' },
       ],
        videos: [  
           {
