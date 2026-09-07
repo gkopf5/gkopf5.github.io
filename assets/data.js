@@ -79,14 +79,28 @@ window.PORTFOLIO = {
         { src: 'images/flying-fish/FishTracker.jpg', caption: 'Tracked swimming gait path at 2Hz speed.' },
       ],
 
-      videos: [
+      videos: [  
+          {
+           src: 'media/flying-fish/swimmingBar.mp4',
+           caption: 'My initial versions of the RMO had no pectoral fins but could swim effectively with the aid of a buoyant rod.',
+           poster: 'images/flying-fish/FishFlyinFree.png', // Optional: customize preview image per video
+          },
+          {
+           src: 'media/flying-fish/Lone Swimmer Clip.mp4',
+           caption: 'Adjusting weight distribution and buoyancy helped the RMO swim freely on its own, although roll stability could use some improvements. ',
+           poster: 'images/flying-fish/FishBody.jpg', // Optional: customize preview image per video
+          },
+          {
+           src: 'media/flying-fish/PrototypeI.mp4',
+           caption: 'Rapid prototyping allowed me to quickly identify the designs best suited towards the actuation I wanted.',
+          },
           {
            src: 'media/flying-fish/croppeddry.mp4',
-           caption: 'Dry actuation of pectoral fins.',
+           caption: 'Dry actuation of pectoral fins demonstrates wireless controlability.',
           },
           {
            src: 'media/flying-fish/croppedopenstraighten.mp4',
-           caption: 'Actuation of pectoral fins to induce turning.',
+           caption: 'Actuation of pectoral fins to induce turning - note how the waterproofing material limits the pectoral fins\' ranges of motion. This is the first thing to fix in the next model!',
            //poster: 'images/flying-fish/FishTracker.jpg', // Optional: customize preview image per video
           },
       ],
