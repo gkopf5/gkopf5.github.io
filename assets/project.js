@@ -79,11 +79,22 @@
           .map(
             (vid) => `
           <figure>
-            <div class="overflow-hidden rounded-lg border border-border bg-black">
-              <video controls playsinline preload="metadata" poster="${vid.poster || project.image}" class="aspect-video w-full">
-                <source src="${vid.src}" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
+            <div class="overflow-hidden rounded-lg border border-border bg-black aspect-video">
+              ${
+                vid.youtubeId
+                  ? `<iframe
+                      src="https://www.youtube-nocookie.com/embed/${vid.youtubeId}"
+                      title="${window.esc(vid.caption || project.title)}"
+                      class="h-full w-full"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>`
+                  : `<video controls playsinline preload="metadata" poster="${vid.poster || project.image}" class="h-full w-full object-cover">
+                      <source src="${vid.src}" type="video/mp4" />
+                      Your browser does not support embedded video.
+                    </video>`
+              }
             </div>
             ${vid.caption ? `<figcaption class="mt-3 text-sm leading-relaxed text-muted-foreground">${window.esc(vid.caption)}</figcaption>` : ''}
           </figure>`,
