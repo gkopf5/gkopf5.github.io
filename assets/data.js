@@ -81,13 +81,13 @@ window.PORTFOLIO = {
 
       videos: [
           {
-           src: 'media/croppeddry.mp4',
+           src: 'media/flying-fish/croppeddry.mp4',
            caption: 'Dry actuation of pectoral fins.',
           },
           {
-           src: 'media/flying-fish/swim_trial.mp4',
-           caption: 'Tetherless swimming trial at 2 Hz.',
-           poster: 'images/flying-fish/FishTracker.jpg', // Optional: customize preview image per video
+           src: 'media/flying-fish/croppedopenstraighten.mp4',
+           caption: 'Actuation of pectoral fins to induce turning.',
+           //poster: 'images/flying-fish/FishTracker.jpg', // Optional: customize preview image per video
           },
       ],
 
