@@ -227,7 +227,7 @@ window.PORTFOLIO = {
       overview: [
         "As part of the Kent State University 2025 REU Program, I worked closely with Professor Xuanhong An, using an adjoint-based gradient descent optimization algorithm to optimize the swim gait of stiff-fin Ostraciiform fish. My work focused on three areas: characterization of the algorithm, establishment of a biological baseline swim gait, and optimization tests for comparison against the baseline.",
         "The optimization algorithm is built around a custom-written CFD program. It simulates the caudal tail fin as a stiff board fixed in place as incompressible fluid is moved across it. The simulation design is twofold: choosing a simplified model allows for the supercomputer cluster to complete full depth optimization runs in a matter of hours instead of days, and the stiff fin can be easily adapted to a robotic model for physical confirmation of simulated results.",
-        "The math behind the optimization algorithm is better referenced in the attached report, but to create a brief overview, a set of fourier modes have parameters which represent the amplitude and period of the pitch and heave of the fin. These discretized vorticity equations can be plugged into a 2D incompressible Navier Stokes solver and solved using gradient descent. However, our parameter had too many dimensions for traditional methods to be feasible, even with a supercomputer cluster. To combat this, an adjoint system was derived to solve for the gradient cost function. By looping through the algorithm, we continually output the gradient with respect to our pitch and heave parameters, which are reinserted into the algorithm as inputs. Eventually, we descend on a local minima (hopefully the true minima) and end the loop.",
+        "The math behind the optimization algorithm is better referenced in the attached report, but to create a brief overview, a set of fourier modes have parameters which represent the amplitude and period of the pitch and heave of the fin. These discretized vorticity equations can be plugged into a 2D incompressible Navier Stokes solver and solved using gradient descent. However, our parameter had too many dimensions for traditional methods to be feasible, even with a supercomputer cluster. To combat this, an adjoint system was derived to solve for the gradient cost function. By looping through the algorithm, we continually output the gradient with respect to our pitch and heave parameters, which are reinserted into the algorithm as inputs. Eventually, we descend on a local minima (hopefully the global minima) and end the loop.",
       ],
       highlights: [
         'Reduced-order hydrodynamic model of an oscillating-tail swimmer.',
@@ -243,12 +243,18 @@ window.PORTFOLIO = {
       ],
       report: { title: 'Study & Results Report', file: 'files/fish_paper.pdf', pages: '13 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/ostraciiform-swim/1.jpg', caption: 'Reduced-order hydrodynamic model schematic.' },
-        { src: 'media/ostraciiform-swim/2.jpg', caption: 'Optimization convergence toward an efficient gait.' },
-        { src: 'media/ostraciiform-swim/3.jpg', caption: 'Flow-field visualization around the oscillating tail.' },
-        { src: 'media/ostraciiform-swim/4.jpg', caption: 'Efficiency comparison across candidate gaits.' },
+        { src: 'images/fish/diagram.png', caption: 'Diagram of 2D simulation of the caudal fin.' },
+        { src: 'images/fish/cycle.png', caption: 'Diagram of the core logic loop behind the optimization algorithm. See report for in-depth explanation of the math involed.' },
+        { src: 'images/fish/fish_graphic_1.png', caption: "Example flow-field visualization and optimized drag graph. The algorithm was first run with a single fourier mode. The \"drag value\" calculated here is more accurately a measure of inefficiency. As it decreases, our fish uses less energy per stroke. Units are arbitrary. " },
+        { src: 'images/fish/fish_graphic_5.png', caption: 'Inputting the results of our single fourier mode run into five fourier modes expands the depth of our optimization. We see a marked decrease in drag, although it is less impactful than the single fourier mode run was.' },
+        { src: 'images/fish/fish_graphic_10.png', caption: 'At ten fourier modes, we see once again the change in drag is another order of magnitude smaller. The algorithm is close to done optimizing here, and only runs six cycles before reaching a minima and exiting.' },
+        { src: 'images/fish/fish_graphic_30.png', caption: "Thirty fourier modes basically does nothing to our efficiency. The program waffles about for a few cycles before exiting, indicating the algorithm's resolution is too rough to continue to refine the optimization." },
+        { src: 'images/fish/initial_conditions.png', caption: 'Initial Drag and Lift values set into the algorithm.' },
+        { src: 'images/fish/conditions_FINAL.png', caption: 'Final Drag and Lift values after complete optimization. A large negative \"Drag\" represents a decrease relative to initial conditions.' },
+        { src: 'images/fish/biology_compare.png', caption: "Comparison of Drag and Lift values to Coe & Gutscmidt's (2023) biological model - see report for further detail." },
       ],
-      video: { src: 'media/ostraciiform-swim/demo.mp4', caption: 'Simulated ostraciiform swim stroke for the optimized tail-beat gait.' },
+      
+      video: { src: 'images/fish/10FT_Vorticity_Model.mp4', caption: 'Optimized Vorticity Field Animation: Note the triple vorticies; it appears the algorithm has developed this unique swimming gait to take advantage of this trailing edge triple-vortice behavior, allowing for small increases in efficiency compared to the simpler, single-vortex gait it started out with.' },
     },
     {
       id: 'carlab-navigation',
