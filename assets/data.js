@@ -3,7 +3,7 @@ window.PORTFOLIO = {
   profile: {
     name: 'George Kopf V',
     role: 'Robotics & Controls',
-    status: 'Princeton University · Class of 2027 · Robotics Minor',
+    status: 'Princeton University · Class of 2027 · Electrical & Computer Engineering · Minor in Robotics',
     location: 'Princeton, NJ',
     intro:
       "I'm a senior at Princeton University with a minor in Robotics, focusing on interdisciplinary research involving electrical, mechanical, and biological robotics and controls. My passion is for all things that walk, climb, swim, and fly.",
