@@ -172,24 +172,24 @@ window.PORTFOLIO = {
       title: 'Upcoming Project: TigerCub Satellite',
       summary:
         'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
-      image: 'projects/pocketqube-satellite.png',
+      image: 'images/sat/tigercub.jpg',
       tags: ['Aerospace', 'PCB', 'Power', 'RF'],
       specs: [
         { label: 'Form', value: '1P PocketQube' },
         { label: 'Power', value: 'Solar + Li-ion' },
-        { label: 'Downlink', value: 'UHF beacon' },
+        { label: 'Downlink', value: 'Iridium Satellite Network' },
       ],
-      timeline: '2023–2024 · Student team',
-      role: 'Power board, EPS firmware',
+      timeline: 'Fall 2026 - Spring 2027 · Student team',
+      role: 'Deployable Burnwire Module, EPS firmware',
       overview: [
-        'A PocketQube-class pico-satellite — a 5 cm cube that is a fraction of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a common bus.',
-        'I designed the electrical power system: solar harvesting, battery charge management, and regulated rails for the avionics, plus the firmware that budgets power across eclipse and sunlight phases.',
+        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
+        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
       ],
       highlights: [
-        'Maximum-power-point solar harvesting into a Li-ion pack with charge protection.',
+        'Deployable retroreflector for crosssectional radar standards.',
         'Regulated multi-rail bus feeding the stacked avionics boards.',
         'EPS firmware that manages power modes across orbital eclipse and sunlight.',
-        'UHF telemetry beacon for a simple, robust ground downlink.',
+        'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
       ],
       milestones: [
         { phase: 'Phase 1', title: 'Power architecture', detail: 'Defined the EPS architecture and modeled the orbital power budget across eclipse cycles.' },
@@ -197,14 +197,14 @@ window.PORTFOLIO = {
         { phase: 'Phase 3', title: 'EPS firmware', detail: 'Wrote firmware for charge management, rail sequencing, and low-power safe modes.' },
         { phase: 'Phase 4', title: 'Integration test', detail: 'Integrated with the avionics stack and validated power modes under simulated load.' },
       ],
-      report: { title: 'EPS Subsystem Report', file: 'reports/pocketqube-satellite.pdf', pages: '20 pages', size: 'PDF' },
+      //report: { title: 'EPS Subsystem Report', file: 'reports/pocketqube-satellite.pdf', pages: '20 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/pocketqube-satellite/1.jpg', caption: 'Stacked PCB avionics bus in the PocketQube frame.' },
-        { src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
-        { src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
-        { src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
+        { src: 'media/pocketqube-satellite/1.jpg', caption: 'Prototype burnwire PCB with triple-MOSFET switch.' },
+        //{ src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
+        //{ src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
+        //{ src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
       ],
-      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: 'EPS power-mode transitions across a simulated eclipse-to-sunlight cycle.' },
+      //video: { src: 'media/pocketqube-satellite/demo.mp4', caption: 'EPS power-mode transitions across a simulated eclipse-to-sunlight cycle.' },
     },
 
 
