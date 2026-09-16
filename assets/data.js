@@ -165,13 +165,13 @@ window.PORTFOLIO = {
     },
 
 
-    
+  
     {
       id: 'pocketqube-satellite',
       index: '03',
-      title: 'PocketQube Satellite',
+      title: 'Upcoming Project: TigerCub Satellite',
       summary:
-        'A 5 cm-class PocketQube pico-satellite with a stacked PCB avionics bus, solar power harvesting, and a UHF telemetry beacon designed for a low-cost orbital demonstration.',
+        'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
       image: 'projects/pocketqube-satellite.png',
       tags: ['Aerospace', 'PCB', 'Power', 'RF'],
       specs: [
