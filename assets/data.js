@@ -20,15 +20,15 @@ window.PORTFOLIO = {
   skillGroups: [
     {
       title: 'Controls & Autonomy',
-      items: ['Optimal Control (iLQR, Partially Observable MDPs, Q Learning)', 'Trajectory Optimization', 'State Estimation & Sensor Fusion', 'Path Planning'],
+      items: ['Optimal Control (iLQR, Partially Observable MDPs, Q Learning)', 'Trajectory Optimization', 'State Estimation, Sensor Feedback, and PID', 'Path Planning'],
     },
     {
       title: 'Robotics',
-      items: ['ROS', 'LiDAR & Camera Perception', 'Mechatronics & Actuation', 'Soft & Bioinspired Mechanisms'],
+      items: ['ROS', 'LiDAR & Camera Perception', 'Mechatronics & Actuation', 'Aerospace Applications', 'Soft & Bioinspired Mechanisms'],
     },
     {
       title: 'Modeling & Tools',
-      items: ['MATLAB', 'Python & Java', 'CAD (Solidworks, Fusion, NX)', 'Circuits (LTspice, Plecs)', 'Adjoint-Based Gradient Descent Optimization'],
+      items: ['MATLAB', 'Python & Java', 'CAD (Solidworks, Fusion, NX)', 'Circuits (LTspice, Plecs, Altium, EasyEda, KiCad)', 'Adjoint-Based Gradient Descent Optimization'],
     },
     {
       title: 'Hardware',
@@ -339,15 +339,23 @@ window.PORTFOLIO = {
         { phase: 'Phase 3', title: 'Motion effects', detail: 'Added IMU-based swing and clash detection driving synchronized light and sound.' },
         { phase: 'Phase 4', title: 'Hilt fabrication', detail: 'Machined the aluminum hilt and integrated the electronics into the assembly.' },
       ],
-      report: { title: 'Build Writeup', file: 'reports/programmable-lightsaber.pdf', pages: '12 pages', size: 'PDF' },
+      report: { title: 'Project Report', file: 'files/lightsaber.pdf', pages: '17 pages', size: 'PDF' },
       gallery: [
         { src: 'media/programmable-lightsaber/1.jpg', caption: 'Addressable RGB blade during an ignite animation.' },
         { src: 'media/programmable-lightsaber/2.jpg', caption: 'Machined aluminum hilt with internal electronics.' },
         { src: 'media/programmable-lightsaber/3.jpg', caption: 'MCU, IMU, and audio board prototype wiring.' },
         { src: 'media/programmable-lightsaber/4.jpg', caption: 'Assembled saber powered on in a dark room.' },
       ],
-      video: { src: 'media/programmable-lightsaber/demo.mp4', caption: 'Motion-reactive swing and clash effects driven by the onboard IMU.' },
-    },
+    videos: [  
+          {
+             youtubeId: 'ewV28aPC_g0', // your YouTube video ID
+             caption: 'Ryan showing off the completed saber!',
+          },
+          {
+             youtubeId: 'J2BTiwhTlY4', // your YouTube video ID
+             caption: 'The internals of the lightsaber's circuitry.',
+          },
+      ],    },
     {
       id: 'origami-swimmer',
       index: '07',
