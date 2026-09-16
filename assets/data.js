@@ -248,10 +248,12 @@ window.PORTFOLIO = {
         { title: 'Line Following Report', file: 'files/Navigation Report.pdf', pages: '11 pages', size: 'PDF' }
       ],
       gallery: [
-        { src: 'media/carlab-navigation/1.jpg', caption: 'Sensor-equipped scale car on the test track.' },
-        { src: 'media/carlab-navigation/2.jpg', caption: 'Fused LiDAR and camera map of the environment.' },
-        { src: 'media/carlab-navigation/3.jpg', caption: 'Planned trajectory rendered in the ROS visualizer.' },
-        { src: 'media/carlab-navigation/4.jpg', caption: 'Onboard compute and sensor mounting detail.' },
+        { src: 'images/carlab/MotorDriverBoard.jpg', caption: 'Close up of the finalized motor driver board. The 7.2V motors run on their own battery supplied to the IRLZ44N MOSFET, with switching driven by PSoC.' },
+        { src: 'images/carlab/PowerDistributionBoard.jpg', caption: 'Close up of the finalized voltage regulator board. Three voltage regulators break our 9.6V supply into a 5V rail for the camera, a 5V rail for the hall effect wheel encoder, and a 6V rail for the servo motors controlling steering.' },
+        { src: 'images/carlab/SpeedControlSchematic.png', caption: 'Altium schematic of the car\'s circuit layout for speed control.' },
+        { src: 'images/carlab/CameraBoardSchematic.png', caption: 'Altium schematic of camera board layout.' },
+        { src: 'images/carlab/topdesign.png', caption: 'Our finalized PSoC Creator Top Design for the analog logic running speed control and line following. The core logic of line following centers around identifying regular intervals in the camera signal stream which represent new lines in an image and comparing their filtered voltage values to a threshold value between white floors and black line. See the design reports for a more in depth breakdown of the analog logic.' },
+        { src: 'images/carlab/rawvid_and_csync.png', caption: 'Sample oscilloscope data, this one showing the raw video feed compared to the separated CSYNC signal by the LM1881 sync separator chip. See the design reports for more data.' },
       ],
       videos: [  
           {
