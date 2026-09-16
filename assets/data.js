@@ -244,8 +244,8 @@ window.PORTFOLIO = {
         { phase: 'Week 9–10', title: 'Track testing', detail: 'Tuned the full stack on the physical car and measured lap reliability.' },
       ],
       reports: [
-        { title: 'Navigation Stack Interim Report', file: 'reports/carlab-navigation-interim.pdf', pages: '10 pages', size: 'PDF' },
-        { title: 'Navigation Stack Final Report', file: 'reports/carlab-navigation-final.pdf', pages: '24 pages', size: 'PDF' }
+        { title: 'PID Speed Control Report', file: 'files/Speed Control Report.pdf', pages: '15 pages', size: 'PDF' },
+        { title: 'Line Following Report', file: 'files/Navigation Report.pdf', pages: '11 pages', size: 'PDF' }
       ],
       gallery: [
         { src: 'media/carlab-navigation/1.jpg', caption: 'Sensor-equipped scale car on the test track.' },
