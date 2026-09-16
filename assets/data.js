@@ -215,33 +215,33 @@ window.PORTFOLIO = {
     {
       id: 'carlab-navigation',
       index: '04',
-      title: 'CarLab Autonomous Navigation',
+      title: 'CarLab: Robotics and Autonomous Systems Lab',
       summary:
         'As part of Junior design class ECE 302, this project involves autonomous controls for a sensor-equipped R/C car capable of PID speed control and autonomous line navigation.',
       image: 'images/carlab/carlab_wide.jpg',
       tags: ['Autonomy', 'PID', 'Analog Circuitry', 'PSoC'],
       specs: [
         { label: 'Role', value: 'Two Person Project Team' },
-        { label: 'Components', value: 'Analog Circuit Design, Finite State programming, 7.4v Power Harness, Camera and Hall Effect sensors, PsoC Creator C & Top Level Design' },
+        { label: 'Components', value: 'Analog Circuit Design, Finite State programming, 9.6v & 7.4v Power Harnesses, Camera and Hall Effect sensors, PsoC Creator C & Top Level Design, XBee UART Radio Modules' },
         { label: 'Microcontroller', value: 'PSoC 5LP' },
       ],
       timeline: 'Fall 2025 · Lab project',
       role: 'Two Person Project Team,  ',
       overview: [
-        "",
-        'I worked on perception and planning — fusing LiDAR and camera data into a consistent world estimate and feeding it to a planner that produces smooth, collision-free trajectories.',
+        "As Princeton's Junior year design class, ECE 302 is the main lab course Electrical Engineers take. Involved in the course is lots of hands-on hardware engineering and feedback controls. PSoC 5LP microcontrollers test analog logic design, and our car succesfully completed speed control and line following benchmarks. ",
+        "See the attached design reports for in-depth explanation of circuit logic and signal data. ",
       ],
       highlights: [
-        'LiDAR + camera sensor fusion for localization and obstacle mapping.',
-        'Real-time path planner producing smooth, collision-free trajectories.',
-        'Built on ROS for modular perception, planning, and control nodes.',
-        'Validated on a physical scale car navigating a marked track.',
+        'PSoC Creator programming and top design heavily based in analog logic.',
+        'PID control systems regulate driving speed and turning angle.',
+        'Foundational hardware skills, including use of AFGs, DMMs, Oscilloscopes, and Logic Analyzers for data collection.',
       ],
       milestones: [
-        { phase: 'Week 1–3', title: 'Sensor bring-up', detail: 'Calibrated the LiDAR and camera and set up the ROS data pipeline on the car.' },
-        { phase: 'Week 4–6', title: 'Localization', detail: 'Fused sensor data into a localization and obstacle map of the track.' },
-        { phase: 'Week 7–8', title: 'Planning', detail: 'Implemented the real-time planner generating smooth, collision-free trajectories.' },
-        { phase: 'Week 9–10', title: 'Track testing', detail: 'Tuned the full stack on the physical car and measured lap reliability.' },
+        { phase: 'Week 1', title: 'Voltage Regulator Board', detail: 'Built out the foundation of the car and added voltage regulator board for handling the PSoC, motors, and sensors.' },
+        { phase: 'Week 2', title: 'Motor Driver Board', detail: 'Motor driver board using PSoC-driven MOSFET switching to control motor PWM.' },
+        { phase: 'Week 3-4', title: 'Speed Control Software & Tuning', detail: 'Main PID control software written and manually tuned using an adjusted Ziegler–Nichols method.' },
+        { phase: 'Week 5', title: 'Camera Board', detail: 'We used a PTC08 v3.3.1 camera breakout with an LM1881 video sync separator chip to break CSYNC and VSYNC signals into separate lines for PSoC.' },
+        { phase: 'Week 6-7', title: 'Line Following Software & Tuning', detail: 'Integrated servo-driven steering control into a secondary PD loop. Many hours in this phase were spent debugging mysterious glitching in the camera feed that kept tripping voltage thresholds for line detection until the problem was utlimately solved with a third camera replacement.' },
       ],
       reports: [
         { title: 'PID Speed Control Report', file: 'files/Speed Control Report.pdf', pages: '15 pages', size: 'PDF' },
@@ -253,8 +253,19 @@ window.PORTFOLIO = {
         { src: 'media/carlab-navigation/3.jpg', caption: 'Planned trajectory rendered in the ROS visualizer.' },
         { src: 'media/carlab-navigation/4.jpg', caption: 'Onboard compute and sensor mounting detail.' },
       ],
-      video: { src: 'media/carlab-navigation/demo.mp4', caption: 'Autonomous lap with real-time perception and path planning.' },
+      videos: [  
+          {
+             youtubeId: 'iHkwRFToN2Y', // your YouTube video ID
+             caption: 'By building a wheel encoder using a hall effect sensor, we could control speed with feedback PID control.',
+          },
+          {
+             youtubeId: 'nf9ySxd8Plg', // your YouTube video ID
+             caption: 'Our line-following car succesfully completes the track with camera-based sensing, requiring speed and steering control.',
+          },
+      ],
     },
+
+    
     {
       id: 'trucklab-ilqr',
       index: '05',
@@ -425,9 +436,9 @@ window.PORTFOLIO = {
       image: 'images/sat/tigercub.jpg',
       tags: ['Aerospace', 'PCB', 'Power', 'RF'],
       specs: [
-        { label: 'Form', value: '1P PocketQube' },
-        { label: 'Power', value: 'Solar + Li-ion' },
+        { label: 'Format', value: '1P PocketQube' },
         { label: 'Downlink', value: 'Iridium Satellite Network' },
+        { label: 'Microcontroller', value: 'Teensy 4.0 & ATSAMD21E18' },
       ],
       timeline: 'Fall 2026 - Spring 2027 · Student team',
       role: 'Deployable Burnwire Module, EPS firmware',
