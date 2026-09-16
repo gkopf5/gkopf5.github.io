@@ -197,14 +197,14 @@ window.PORTFOLIO = {
         { phase: 'Phase 3', title: 'EPS firmware', detail: 'Wrote firmware for charge management, rail sequencing, and low-power safe modes.' },
         { phase: 'Phase 4', title: 'Integration test', detail: 'Integrated with the avionics stack and validated power modes under simulated load.' },
       ],
-      //report: { title: 'EPS Subsystem Report', file: 'reports/pocketqube-satellite.pdf', pages: '20 pages', size: 'PDF' },
+      report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: ' ', size: 'PDF' },
       gallery: [
         { src: 'media/pocketqube-satellite/1.jpg', caption: 'Prototype burnwire PCB with triple-MOSFET switch.' },
         //{ src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
         //{ src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
         //{ src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
       ],
-      //video: { src: 'media/pocketqube-satellite/demo.mp4', caption: 'EPS power-mode transitions across a simulated eclipse-to-sunlight cycle.' },
+      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
 
 
