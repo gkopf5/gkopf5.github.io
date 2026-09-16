@@ -62,7 +62,7 @@
     </section>`
     : ''
 
- const videoList = Array.isArray(project.videos)
+  const videoList = Array.isArray(project.videos)
     ? project.videos
     : project.video
     ? [project.video]
@@ -102,6 +102,40 @@
           .join('')}
       </div>
     </section>`
+    : ''
+
+  // Normalize project reports: Support both single 'report' and multi 'reports' array cleanly
+  const reportList = Array.isArray(project.reports)
+    ? project.reports
+    : project.report
+    ? [project.report]
+    : []
+
+  const reportsHtml = reportList.length
+    ? `
+    <div class="rounded-lg border border-border bg-card p-5">
+      <h2 class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+        ${reportList.length > 1 ? 'Project reports' : 'Project report'}
+      </h2>
+      <div class="mt-3 space-y-3">
+        ${reportList
+          .map(
+            (rep) => `
+          <a href="${rep.file}" target="_blank" rel="noreferrer"
+             class="flex items-center gap-3 rounded-md border border-border bg-background p-3 transition-colors hover:border-primary/60 hover:bg-secondary">
+            <span class="flex size-9 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+              ${window.icon('fileText', 'size-5')}
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="block truncate text-sm font-medium text-foreground">${window.esc(rep.title)}</span>
+              <span class="block font-mono text-[11px] text-muted-foreground">${window.esc(rep.size)} · ${window.esc(rep.pages)}</span>
+            </span>
+            ${window.icon('download', 'size-4 shrink-0 text-muted-foreground')}
+          </a>`,
+          )
+          .join('')}
+      </div>
+    </div>`
     : ''
 
   root.innerHTML = `
@@ -195,20 +229,7 @@
           </div>
         </div>
 
-        <div class="rounded-lg border border-border bg-card p-5">
-          <h2 class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Project report</h2>
-          <a href="${project.report.file}" target="_blank" rel="noreferrer"
-             class="mt-3 flex items-center gap-3 rounded-md border border-border bg-background p-3 transition-colors hover:border-primary/60 hover:bg-secondary">
-            <span class="flex size-9 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
-              ${window.icon('fileText', 'size-5')}
-            </span>
-            <span class="min-w-0 flex-1">
-              <span class="block truncate text-sm font-medium text-foreground">${window.esc(project.report.title)}</span>
-              <span class="block font-mono text-[11px] text-muted-foreground">${window.esc(project.report.size)} · ${window.esc(project.report.pages)}</span>
-            </span>
-            ${window.icon('download', 'size-4 shrink-0 text-muted-foreground')}
-          </a>
-        </div>
+        ${reportsHtml}
       </aside>
     </div>
 
