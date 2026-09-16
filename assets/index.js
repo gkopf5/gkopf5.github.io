@@ -31,8 +31,8 @@
   // Hero stats
   const stats = [
     { label: 'Program', value: profile.status, icon: false },
-    { label: 'Based in', value: profile.location, icon: true },
-    { label: 'Focus', value: 'Robotics · Controls · Autonomy', icon: false },
+    { label: 'Location', value: profile.location, icon: true },
+    { label: 'Focus', value: 'Robotics · Controls · Circuits', icon: false },
   ]
   document.getElementById('hero-stats').innerHTML = stats
     .map(
@@ -43,6 +43,27 @@
           ${item.icon ? window.icon('mapPin', 'size-3.5 text-primary') : ''}
           ${window.esc(item.value)}
         </dd>
+      </div>`,
+    )
+    .join('')
+
+  // Skills grid
+  document.getElementById('skills-grid').innerHTML = skillGroups
+    .map(
+      (group) => `
+      <div class="bg-card p-5">
+        <h3 class="font-mono text-xs uppercase tracking-[0.18em] text-primary">${window.esc(group.title)}</h3>
+        <ul class="mt-3 space-y-2">
+          ${group.items
+            .map(
+              (item) => `
+            <li class="flex items-start gap-2 text-sm text-foreground">
+              <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary"></span>
+              ${window.esc(item)}
+            </li>`,
+            )
+            .join('')}
+        </ul>
       </div>`,
     )
     .join('')
@@ -85,27 +106,6 @@
           </div>
         </div>
       </a>`,
-    )
-    .join('')
-
-  // Skills grid
-  document.getElementById('skills-grid').innerHTML = skillGroups
-    .map(
-      (group) => `
-      <div class="bg-card p-5">
-        <h3 class="font-mono text-xs uppercase tracking-[0.18em] text-primary">${window.esc(group.title)}</h3>
-        <ul class="mt-3 space-y-2">
-          ${group.items
-            .map(
-              (item) => `
-            <li class="flex items-start gap-2 text-sm text-foreground">
-              <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary"></span>
-              ${window.esc(item)}
-            </li>`,
-            )
-            .join('')}
-        </ul>
-      </div>`,
     )
     .join('')
 
