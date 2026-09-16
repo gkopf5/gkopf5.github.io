@@ -166,52 +166,13 @@ window.PORTFOLIO = {
 
 
   
-    {
-      id: 'pocketqube-satellite',
-      index: '03',
-      title: 'Upcoming Project: TigerCub Satellite',
-      summary:
-        'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
-      image: 'images/sat/tigercub.jpg',
-      tags: ['Aerospace', 'PCB', 'Power', 'RF'],
-      specs: [
-        { label: 'Form', value: '1P PocketQube' },
-        { label: 'Power', value: 'Solar + Li-ion' },
-        { label: 'Downlink', value: 'Iridium Satellite Network' },
-      ],
-      timeline: 'Fall 2026 - Spring 2027 · Student team',
-      role: 'Deployable Burnwire Module, EPS firmware',
-      overview: [
-        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
-        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
-      ],
-      highlights: [
-        'Deployable retroreflector for crosssectional radar standards.',
-        'Regulated multi-rail bus feeding the stacked avionics boards.',
-        'EPS firmware that manages power modes across orbital eclipse and sunlight.',
-        'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
-      ],
-      milestones: [
-        { phase: 'Phase 1', title: 'Power architecture', detail: 'Defined the EPS architecture and modeled the orbital power budget across eclipse cycles.' },
-        { phase: 'Phase 2', title: 'Board design', detail: 'Designed the solar-harvesting and regulation PCB to fit the PocketQube stack.' },
-        { phase: 'Phase 3', title: 'EPS firmware', detail: 'Wrote firmware for charge management, rail sequencing, and low-power safe modes.' },
-        { phase: 'Phase 4', title: 'Integration test', detail: 'Integrated with the avionics stack and validated power modes under simulated load.' },
-      ],
-      report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: ' ', size: 'PDF' },
-      gallery: [
-        { src: 'media/pocketqube-satellite/1.jpg', caption: 'Prototype burnwire PCB with triple-MOSFET switch.' },
-        //{ src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
-        //{ src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
-        //{ src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
-      ],
-      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
-    },
+  
 
 
     
     {
       id: 'ostraciiform-swim',
-      index: '04',
+      index: '03',
       title: 'Ostraciiform Swim Gait Simulation & Optimization',
       summary:
         "A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an Adjoint-Based Gradient Descent optimizer to find tail-beat gaits that maximize thrust efficiency.",
@@ -258,7 +219,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'carlab-navigation',
-      index: '05',
+      index: '04',
       title: 'CarLab Autonomous Navigation',
       summary:
         'An autonomous navigation stack for a sensor-equipped scale car, fusing LiDAR and camera data for localization and running a real-time path planner on onboard compute.',
@@ -298,7 +259,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'trucklab-ilqr',
-      index: '06',
+      index: '05',
       title: 'TruckLab Self-Driving iLQR Algorithm',
       summary:
         'An iterative LQR trajectory optimizer for a scale articulated truck, planning tractor-trailer maneuvers like reversing and docking that respect the vehicle jackknife limits.',
@@ -338,7 +299,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'programmable-lightsaber',
-      index: '07',
+      index: '06',
       title: 'Programmable Lightsaber',
       summary:
         'A programmable LED lightsaber with an addressable RGB blade, motion-reactive sound and lighting effects driven by an IMU, and a machined aluminum hilt.',
@@ -378,7 +339,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'origami-swimmer',
-      index: '08',
+      index: '07',
       title: 'Bioinspired Origami Swimmer',
       summary:
         'A soft aquatic robot using an origami-folded fin structure that expands and contracts to generate thrust, exploring compliant folding mechanisms for underwater propulsion.',
@@ -418,7 +379,7 @@ window.PORTFOLIO = {
     },
     {
       id: 'boomcoli-igem',
-      index: '09',
+      index: '08',
       title: 'Bioengineering BOOMcoli for iGEM',
       summary:
         'An iGEM synthetic-biology project engineering E. coli ("BOOMcoli") with a designed genetic circuit, including the wet-lab work and the supporting hardware and data tooling.',
@@ -456,85 +417,46 @@ window.PORTFOLIO = {
       ],
       video: { src: 'media/boomcoli-igem/demo.mp4', caption: 'Walkthrough of the instrumentation and data pipeline supporting the wet lab.' },
     },
-    {
-      id: 'formula-student',
-      index: '10',
-      title: 'Formula Student — Princeton Racing Electric',
+
+      {
+      id: 'pocketqube-satellite',
+      index: '09',
+      title: 'Upcoming Project: TigerCub Satellite',
       summary:
-        'An electric Formula Student race car built with Princeton Racing Electric, where I worked on the high-voltage powertrain and the tractive-system electronics that turn battery energy into safe, controllable drive.',
-      image: 'projects/formula-student.png',
-      tags: ['Formula Student', 'HV Powertrain', 'Motor Control', 'PCB'],
+        'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
+      image: 'images/sat/tigercub.jpg',
+      tags: ['Aerospace', 'PCB', 'Power', 'RF'],
       specs: [
-        { label: 'Class', value: 'FSAE Electric' },
-        { label: 'Team', value: 'Princeton Racing Electric' },
-        { label: 'Powertrain', value: 'High-voltage' },
+        { label: 'Form', value: '1P PocketQube' },
+        { label: 'Power', value: 'Solar + Li-ion' },
+        { label: 'Downlink', value: 'Iridium Satellite Network' },
       ],
-      timeline: '2024–2025 · Princeton Racing Electric',
-      role: 'HV powertrain & tractive-system electronics',
+      timeline: 'Fall 2026 - Spring 2027 · Student team',
+      role: 'Deployable Burnwire Module, EPS firmware',
       overview: [
-        'A student-built electric Formula Student car developed with Princeton Racing Electric, competing under FSAE rules. The team designs and builds the whole vehicle, and the electric powertrain is the heart of it — a high-voltage battery driving a motor through a controller, all wrapped in strict safety systems.',
-        'I worked on the tractive-system electronics: the high-voltage distribution, the motor-controller interface, and the sensing and interlocks that keep the powertrain safe and compliant with the rules.',
+        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
+        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
       ],
       highlights: [
-        'High-voltage tractive-system wiring and distribution designed to FSAE safety rules.',
-        'Motor-controller interface translating driver input into torque commands.',
-        'Sensing and interlocks for the shutdown circuit and tractive-system status.',
-        'Bench and on-car testing to validate the powertrain before competition.',
+        'Deployable retroreflector for crosssectional radar standards.',
+        'Regulated multi-rail bus feeding the stacked avionics boards.',
+        'EPS firmware that manages power modes across orbital eclipse and sunlight.',
+        'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Powertrain architecture', detail: 'Worked with the team to define the HV powertrain layout and the tractive-system safety chain.' },
-        { phase: 'Phase 2', title: 'Electronics design', detail: 'Designed the tractive-system boards and the motor-controller interface to FSAE rules.' },
-        { phase: 'Phase 3', title: 'Integration', detail: 'Integrated the HV powertrain into the chassis and wired the shutdown and interlock circuits.' },
-        { phase: 'Phase 4', title: 'Testing & competition', detail: 'Ran bench and on-car tests, validated safety systems, and prepared the car for competition.' },
+        { phase: 'Phase 1', title: 'Power architecture', detail: 'Defined the EPS architecture and modeled the orbital power budget across eclipse cycles.' },
+        { phase: 'Phase 2', title: 'Board design', detail: 'Designed the solar-harvesting and regulation PCB to fit the PocketQube stack.' },
+        { phase: 'Phase 3', title: 'EPS firmware', detail: 'Wrote firmware for charge management, rail sequencing, and low-power safe modes.' },
+        { phase: 'Phase 4', title: 'Integration test', detail: 'Integrated with the avionics stack and validated power modes under simulated load.' },
       ],
-      report: { title: 'Powertrain Report', file: 'reports/formula-student.pdf', pages: '24 pages', size: 'PDF' },
+      report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/formula-student/1.jpg', caption: 'High-voltage tractive-system wiring in the chassis.' },
-        { src: 'media/formula-student/2.jpg', caption: 'Motor-controller interface board under test.' },
-        { src: 'media/formula-student/3.jpg', caption: 'Shutdown-circuit and interlock sensing detail.' },
-        { src: 'media/formula-student/4.jpg', caption: 'The completed car at a Princeton Racing Electric test day.' },
+        { src: 'media/pocketqube-satellite/1.jpg', caption: 'Prototype burnwire PCB with triple-MOSFET switch.' },
+        //{ src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
+        //{ src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
+        //{ src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
       ],
-      video: { src: 'media/formula-student/demo.mp4', caption: 'On-car powertrain test validating torque response and safety systems.' },
-    },
-    {
-      id: 'wall-e-robot',
-      index: '11',
-      title: 'Wall-E Robot — Princeton University Robotics Club',
-      summary:
-        'A Wall-E inspired mobile robot built with the Princeton University Robotics Club, featuring a tracked drive base, expressive articulated head, and teleoperated control with sensor-driven behaviors.',
-      image: 'projects/wall-e-robot.png',
-      tags: ['Robotics Club', 'Mechatronics', 'Embedded C', 'Teleop'],
-      specs: [
-        { label: 'Drive', value: 'Tracked base' },
-        { label: 'Team', value: 'Princeton Robotics Club' },
-        { label: 'Control', value: 'Teleop + behaviors' },
-      ],
-      timeline: '2024 · Princeton University Robotics Club',
-      role: 'Electronics, firmware, integration',
-      overview: [
-        'A Wall-E inspired robot built as a Princeton University Robotics Club project — a tracked mobile base with an expressive articulated head and arms, controlled by an operator with a few autonomous behaviors layered on top.',
-        'I contributed to the electronics and firmware: driving the tracked base, animating the head and arms, and wiring up the sensors that let the robot react to its surroundings.',
-      ],
-      highlights: [
-        'Tracked differential drive base with responsive teleoperated control.',
-        'Articulated head and arm actuation for expressive, character-accurate motion.',
-        'Sensor-driven behaviors that let the robot react to obstacles and people.',
-        'Built collaboratively as a club project across a mixed-experience team.',
-      ],
-      milestones: [
-        { phase: 'Phase 1', title: 'Design & parts', detail: 'Planned the drive base and articulation with the club team and selected motors and electronics.' },
-        { phase: 'Phase 2', title: 'Drive & firmware', detail: 'Built the tracked base and wrote firmware for motor control and teleoperation.' },
-        { phase: 'Phase 3', title: 'Expression & sensing', detail: 'Added head and arm animation and integrated sensors for reactive behaviors.' },
-        { phase: 'Phase 4', title: 'Assembly & demo', detail: 'Assembled the full robot and demonstrated it at club showcases.' },
-      ],
-      report: { title: 'Build Report', file: 'reports/wall-e-robot.pdf', pages: '18 pages', size: 'PDF' },
-      gallery: [
-        { src: 'media/wall-e-robot/1.jpg', caption: 'Tracked drive base during assembly.' },
-        { src: 'media/wall-e-robot/2.jpg', caption: 'Articulated head and arm actuation mechanism.' },
-        { src: 'media/wall-e-robot/3.jpg', caption: 'Electronics and firmware bring-up on the bench.' },
-        { src: 'media/wall-e-robot/4.jpg', caption: 'Completed robot at a Robotics Club showcase.' },
-      ],
-      video: { src: 'media/wall-e-robot/demo.mp4', caption: 'Teleoperated drive with expressive head and arm motion.' },
+      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
   ],
 }
