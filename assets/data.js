@@ -164,12 +164,6 @@ window.PORTFOLIO = {
       ],
     },
 
-
-  
-  
-
-
-    
     {
       id: 'ostraciiform-swim',
       index: '03',
@@ -217,23 +211,24 @@ window.PORTFOLIO = {
       
       video: { src: 'images/fish/10FT_Vorticity_Model.mp4', caption: 'Optimized Vorticity Field Animation: Note the triple vorticies; it appears the algorithm has developed this unique swimming gait to take advantage of this trailing edge triple-vortice behavior, allowing for small increases in efficiency compared to the simpler, single-vortex gait it started out with.' },
     },
+    
     {
       id: 'carlab-navigation',
       index: '04',
       title: 'CarLab Autonomous Navigation',
       summary:
-        'An autonomous navigation stack for a sensor-equipped scale car, fusing LiDAR and camera data for localization and running a real-time path planner on onboard compute.',
-      image: 'projects/carlab-navigation.jpg',
-      tags: ['Autonomy', 'ROS', 'LiDAR', 'Planning'],
+        'As part of Junior design class ECE 302, this project involves autonomous controls for a sensor-equipped R/C car capable of PID speed control and autonomous line navigation.',
+      image: 'images/carlab/carlab_wide.jpg',
+      tags: ['Autonomy', 'PID', 'Analog Circuitry', 'PSoC'],
       specs: [
-        { label: 'Sensing', value: 'LiDAR + Camera' },
-        { label: 'Stack', value: 'ROS' },
-        { label: 'Planner', value: 'Real-time' },
+        { label: 'Role', value: 'Two Person Project Team' },
+        { label: 'Components', value: 'Analog Circuit Design, Finite State programming, 7.4v Power Harness, Camera and Hall Effect sensors, PsoC Creator C & Top Level Design' },
+        { label: 'Microcontroller', value: 'PSoC 5LP' },
       ],
-      timeline: 'Spring 2024 · Lab project',
-      role: 'Perception & planning software',
+      timeline: 'Fall 2025 · Lab project',
+      role: 'Two Person Project Team,  ',
       overview: [
-        'An autonomous navigation stack developed on a scale research car in the CarLab platform. The car localizes itself, perceives obstacles, and plans a path through a track in real time using only onboard compute.',
+        "",
         'I worked on perception and planning — fusing LiDAR and camera data into a consistent world estimate and feeding it to a planner that produces smooth, collision-free trajectories.',
       ],
       highlights: [
@@ -248,7 +243,10 @@ window.PORTFOLIO = {
         { phase: 'Week 7–8', title: 'Planning', detail: 'Implemented the real-time planner generating smooth, collision-free trajectories.' },
         { phase: 'Week 9–10', title: 'Track testing', detail: 'Tuned the full stack on the physical car and measured lap reliability.' },
       ],
-      report: { title: 'Navigation Stack Report', file: 'reports/carlab-navigation.pdf', pages: '24 pages', size: 'PDF' },
+      reports: [
+        { title: 'Navigation Stack Interim Report', file: 'reports/carlab-navigation-interim.pdf', pages: '10 pages', size: 'PDF' },
+        { title: 'Navigation Stack Final Report', file: 'reports/carlab-navigation-final.pdf', pages: '24 pages', size: 'PDF' }
+      ],
       gallery: [
         { src: 'media/carlab-navigation/1.jpg', caption: 'Sensor-equipped scale car on the test track.' },
         { src: 'media/carlab-navigation/2.jpg', caption: 'Fused LiDAR and camera map of the environment.' },
@@ -262,9 +260,9 @@ window.PORTFOLIO = {
       index: '05',
       title: 'TruckLab Self-Driving iLQR Algorithm',
       summary:
-        'An iterative LQR trajectory optimizer for a scale articulated truck, planning tractor-trailer maneuvers like reversing and docking that respect the vehicle jackknife limits.',
+        'An iterative LQR trajectory optimizer for a scale articulated truck, planning tractor-trailer maneuvers like reversing and docking that respect the vehicle jackknife limits. fusing LiDAR and camera data for localization and running a real-time path planner on onboard compute',
       image: 'projects/trucklab-ilqr.png',
-      tags: ['Optimal Control', 'iLQR', 'Python', 'Trajectory'],
+      tags: ['Optimal Control', 'iLQR', 'ROS2', 'Python', 'Trajectory'],
       specs: [
         { label: 'Method', value: 'iLQR' },
         { label: 'Vehicle', value: 'Tractor-trailer' },
