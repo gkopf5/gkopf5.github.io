@@ -288,25 +288,27 @@ window.PORTFOLIO = {
         "Our system used two ILQR functions running concurrently. The first ILQR ran as a safety monitor. From an input, the monitor considered the human input and applied the 5D bicycle kinematics to predict the vehicle’s trajectory under human control. At the termination of a 12 step (1.2 s) dynamic trajectory simulated from the input control, the monitor would run receding horizon ILQR from the end of the trajectory. If the monitor predicted that the simulated dynamic trajectory or ILQR entered a failure state, the monitor would consider the human’s input to be unsafe, and revert to the fallback policy. See the attached report for further detail on the design of the fallback policy, goalpost positioning, safety filter design, and ROS node architecture.",
       ],
       highlights: [
-        'iLQR optimizer over the nonlinear tractor-trailer kinematic model.',
-        'Handles hard maneuvers like reverse parking and dock alignment.',
-        'Cost shaping that keeps the trailer within safe jackknife limits.',
-        'Validated in simulation and on the TruckLab scale vehicle.',
+        'iLQR optimizer over the simple truck kinematic model.',
+        'Can drive autonomously or act as a safety-filter for manual driving.',
+        'Prevents obstacle collisions and road line violations.',
+        'ROS2 architecture localizes the truck, runs simulations, and handles the burden of the running logic.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Vehicle model', detail: 'Derived the articulated tractor-trailer kinematics and linearizations for iLQR.' },
-        { phase: 'Phase 2', title: 'iLQR solver', detail: 'Implemented the iterative LQR optimizer with cost terms for the docking objective.' },
-        { phase: 'Phase 3', title: 'Constraint tuning', detail: 'Shaped costs to keep trailer angles within safe jackknife limits during reversing.' },
-        { phase: 'Phase 4', title: 'Validation', detail: 'Verified maneuvers in simulation and deployed them on the TruckLab scale truck.' },
+        { phase: 'Week 1', title: 'ROS2 Setup', detail: 'Established ROS2 on the Jetson with localization via april tags and node architecture.' },
+        { phase: 'Week 2', title: 'iLQR Solver', detail: 'Implemented the iterative LQR optimizer with physics-based models of the car and track.' },
+        { phase: 'Week 3-4', title: 'Safety Filter', detail: 'Built two-layer iLQR safety filter with safety monitor on layer one and fallback policy on layer two.' },
+        { phase: 'Week 5', title: 'Tuning', detail: 'Verified maneuvers in simulation and deployed them on the TruckLab scale truck. Tuned the algorithm\'s physical models and safety gains.' },
       ],
-      report: { title: 'Algorithm & Results Report', file: 'reports/trucklab-ilqr.pdf', pages: '20 pages', size: 'PDF' },
+      report: { title: 'Algorithm & Results Report', file: 'files/ECE346 Draft Report.pdf', pages: '9 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/trucklab-ilqr/1.jpg', caption: 'Scale articulated tractor-trailer test vehicle.' },
-        { src: 'media/trucklab-ilqr/2.jpg', caption: 'iLQR-optimized reverse-docking trajectory.' },
-        { src: 'media/trucklab-ilqr/3.jpg', caption: 'Trailer angle staying within jackknife limits.' },
-        { src: 'media/trucklab-ilqr/4.jpg', caption: 'Simulation vs. on-vehicle path comparison.' },
+        { src: 'images/trucklab/ilqr diagram.png', caption: 'iLQR logic loop diagram. Note the sequencing of the forward pass line search and backwards pass policy calculation.' },
+        { src: 'images/trucklab/ros nodes architecture.png', caption: 'ROS2 nodes architecture. The safety filter node acts as the core of the logic block, using branch nodes to localize the track, predict system dynamics, and estimate actuation error.' },
       ],
       video: { src: 'media/trucklvideos: [  
+          {
+             youtubeId: 'RCPHTLpMS2Y', // your YouTube video ID
+             caption: 'The second-layer iLQR algorithm works as an effective self-driving algorithm without obstacles on the track.',
+          },
           {
              youtubeId: '7VjDNxjxyCo', // your YouTube video ID
              caption: 'ROS2 graphic demonstrating the safety filter algorithm taking over during manual driving to slam the brakes before a collision in the forward reachable horizon becomes unavoidable.',
