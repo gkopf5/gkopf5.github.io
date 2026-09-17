@@ -273,19 +273,19 @@ window.PORTFOLIO = {
       index: '05',
       title: 'TruckLab Self-Driving iLQR Algorithm',
       summary:
-        'An iterative LQR trajectory optimizer for a scale articulated truck, planning tractor-trailer maneuvers like reversing and docking that respect the vehicle jackknife limits. fusing LiDAR and camera data for localization and running a real-time path planner on onboard compute',
+        'As part of ECE 346: Intelligent Robotics, we built and designed an iterative LQR trajectory optimizer for a scale R/C truck, with path planning and obstacle avoidance. ROS2 april tag localization runs a real-time localization and path planner on onboard compute.',
       image: 'projects/trucklab-ilqr.png',
       tags: ['Optimal Control', 'iLQR', 'ROS2', 'Python', 'Trajectory'],
       specs: [
-        { label: 'Method', value: 'iLQR' },
-        { label: 'Vehicle', value: 'Tractor-trailer' },
-        { label: 'Maneuvers', value: 'Reverse / Dock' },
+        { label: 'Processor', value: 'Jetson Orin Nano' },
+        { label: 'Path Planner', value: 'iLQR' },
+        { label: 'Software', value: 'ROS2, Python' },
+        { label: 'Modes', value: 'Assistive Safety Filter / Full Self-Driving' },
       ],
-      timeline: 'Fall 2023 · Controls project',
-      role: 'Optimal control, implementation',
+      timeline: 'Spring 2026 · Optimal Controls project',
+      role: 'Four Person Project Team',
       overview: [
-        'A self-driving trajectory optimizer for the TruckLab scale articulated truck. Reversing and docking a tractor-trailer is notoriously hard because the trailer angle is unstable and can jackknife, so it needs a planner that reasons about the full articulated dynamics.',
-        'I implemented iterative LQR (iLQR) to optimize maneuvers over the nonlinear tractor-trailer model, generating control sequences that dock the trailer while respecting the jackknife angle limits.',
+        "Our system used two ILQR functions running concurrently. The first ILQR ran as a safety monitor. From an input, the monitor considered the human input and applied the 5D bicycle kinematics to predict the vehicle’s trajectory under human control. At the termination of a 12 step (1.2 s) dynamic trajectory simulated from the input control, the monitor would run receding horizon ILQR from the end of the trajectory. If the monitor predicted that the simulated dynamic trajectory or ILQR entered a failure state, the monitor would consider the human’s input to be unsafe, and revert to the fallback policy. See the attached report for further detail on the design of the fallback policy, goalpost positioning, safety filter design, and ROS node architecture.",
       ],
       highlights: [
         'iLQR optimizer over the nonlinear tractor-trailer kinematic model.',
@@ -306,8 +306,22 @@ window.PORTFOLIO = {
         { src: 'media/trucklab-ilqr/3.jpg', caption: 'Trailer angle staying within jackknife limits.' },
         { src: 'media/trucklab-ilqr/4.jpg', caption: 'Simulation vs. on-vehicle path comparison.' },
       ],
-      video: { src: 'media/trucklab-ilqr/demo.mp4', caption: 'Automated reverse-and-dock maneuver planned by the iLQR optimizer.' },
+      video: { src: 'media/trucklvideos: [  
+          {
+             youtubeId: '7VjDNxjxyCo', // your YouTube video ID
+             caption: 'ROS2 graphic demonstrating the safety filter algorithm taking over during manual driving to slam the brakes before a collision in the forward reachable horizon becomes unavoidable.',
+          },
+          {
+             youtubeId: 'm-QncJ7ivXQ', // your YouTube video ID
+             caption: 'Another example of the safety filter. Here it succesfully takes control, steers around an obstacle, then hands control to the driver. When the unavoidable three-block wall enters the forward reachable horizon, the safety filter slams the brakes.',
+          },
+          {
+             youtubeId: '7KZxNe5Iyiw', // your YouTube video ID
+             caption: 'Our full self-driving ILQR algorithm attempts to drive around the obstacle. It\s a little tentative to leave the roadlines, but eventually makes the decision to drive over the lines and around obstacle.',
+          },
+      ],  
     },
+
     {
       id: 'programmable-lightsaber',
       index: '06',
