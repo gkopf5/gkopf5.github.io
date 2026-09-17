@@ -314,7 +314,7 @@ window.PORTFOLIO = {
       title: 'Programmable Lightsaber',
       summary:
         'A programmable LED lightsaber with an addressable RGB blade, motion-reactive sound and lighting effects driven by an IMU, and a machined aluminum hilt.',
-      image: 'projects/programmable-lightsaber.png',
+      image: 'images/lightsaber/lightsaber.png',
       tags: ['Embedded C', 'LEDs', 'IMU', 'Audio'],
       specs: [
         { label: 'Blade', value: 'Addressable RGB' },
@@ -353,7 +353,7 @@ window.PORTFOLIO = {
           },
           {
              youtubeId: 'J2BTiwhTlY4', // your YouTube video ID
-             caption: 'The internals of the lightsaber's circuitry.',
+             caption: 'The internals of the lightsaber\'s circuitry.',
           },
       ],    },
     {
