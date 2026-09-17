@@ -274,7 +274,7 @@ window.PORTFOLIO = {
       title: 'TruckLab Self-Driving iLQR Algorithm',
       summary:
         'As part of ECE 346: Intelligent Robotics, we built and designed an iterative LQR trajectory optimizer for a scale R/C truck, with path planning and obstacle avoidance. ROS2 april tag localization runs a real-time localization and path planner on onboard compute.',
-      image: 'projects/trucklab-ilqr.png',
+      image: 'images/trucklab/truck.jpg',
       tags: ['Optimal Control', 'iLQR', 'ROS2', 'Python', 'Trajectory'],
       specs: [
         { label: 'Processor', value: 'Jetson Orin Nano' },
@@ -304,7 +304,7 @@ window.PORTFOLIO = {
         { src: 'images/trucklab/ilqr diagram.png', caption: 'iLQR logic loop diagram. Note the sequencing of the forward pass line search and backwards pass policy calculation.' },
         { src: 'images/trucklab/ros nodes architecture.png', caption: 'ROS2 nodes architecture. The safety filter node acts as the core of the logic block, using branch nodes to localize the track, predict system dynamics, and estimate actuation error.' },
       ],
-      video: [  
+      videos: [  
           {
              youtubeId: 'RCPHTLpMS2Y', // your YouTube video ID
              caption: 'The second-layer iLQR algorithm works as an effective self-driving algorithm without obstacles on the track.',
@@ -370,7 +370,7 @@ window.PORTFOLIO = {
              youtubeId: 'J2BTiwhTlY4', // your YouTube video ID
              caption: 'The internals of the lightsaber\'s circuitry.',
           },
-             {
+          {
              youtubeId: 'ewV28aPC_g0', // your YouTube video ID
              caption: 'Ryan showing off the completed saber!',
           },
