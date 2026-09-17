@@ -299,7 +299,7 @@ window.PORTFOLIO = {
         { phase: 'Week 3-4', title: 'Safety Filter', detail: 'Built two-layer iLQR safety filter with safety monitor on layer one and fallback policy on layer two.' },
         { phase: 'Week 5', title: 'Tuning', detail: 'Verified maneuvers in simulation and deployed them on the TruckLab scale truck. Tuned the algorithm\'s physical models and safety gains.' },
       ],
-      report: { title: 'Algorithm & Results Report', file: 'files/ECE346 Draft Report.pdf', pages: '9 pages', size: 'PDF' },
+      report: { title: 'Project Report', file: 'files/ECE346 Report.pdf', pages: '9 pages', size: 'PDF' },
       gallery: [
         { src: 'images/trucklab/ilqr diagram.png', caption: 'iLQR logic loop diagram. Note the sequencing of the forward pass line search and backwards pass policy calculation.' },
         { src: 'images/trucklab/ros nodes architecture.png', caption: 'ROS2 nodes architecture. The safety filter node acts as the core of the logic block, using branch nodes to localize the track, predict system dynamics, and estimate actuation error.' },
