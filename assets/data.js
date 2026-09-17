@@ -315,47 +315,53 @@ window.PORTFOLIO = {
       summary:
         'A programmable LED lightsaber with an addressable RGB blade, motion-reactive sound and lighting effects driven by an IMU, and a machined aluminum hilt.',
       image: 'images/lightsaber/lightsaber.png',
-      tags: ['Embedded C', 'LEDs', 'IMU', 'Audio'],
+      tags: ['Embedded C', 'PID Controls', 'IMU', 'Audio'],
       specs: [
-        { label: 'Blade', value: 'Addressable RGB' },
-        { label: 'Motion', value: 'IMU-reactive' },
-        { label: 'Hilt', value: 'Machined Al' },
+        { label: 'Role', value: 'Two Person Project Team' },
+        { label: 'Components', value: 'Breadboard Circuit Design, Feedback Controls, Reactive to swinging and clashing, UART-controlled audio DFPlayer' },
+        { label: 'Microcontroller', value: 'Arduino Nano' },
       ],
-      timeline: 'Summer 2023 · Personal project',
-      role: 'Electronics, firmware, fabrication',
+      timeline: 'Fall 2025 · Lab project',
+      role: 'Two Person Project Team,  ',
       overview: [
-        'A programmable lightsaber built for fun that turned into a full embedded project. An addressable RGB LED strip lights the blade with animated ignite and retract effects, and an onboard IMU makes the light and sound react to swings and clashes.',
+        "As Princeton's Junior year design class, ECE 302 is the main lab course Electrical Engineers take. Involved in the course is a final project of our own choosing. My partner and I decided to build a programmable lightsaber.",
+        'The lightsaber boasts an addressable RGB LED strip which lights the blade with animated ignite, retract, and clash effects. An onboard, pre-offset IMU makes the light and sound react to swings and clashes in real-time.',
+        "The passive flickering of the blade is driven by a sinoidal feedback algorithm based on the average swing speed.",
         'I designed the electronics, wrote the firmware for the LED animations and motion detection, and machined the aluminum hilt to house the battery, board, and speaker.',
+        "See the attached design reports for in-depth explanation of circuit logic, breadboard communication protocols, and signal data. ",
       ],
       highlights: [
-        'Addressable RGB blade with animated ignite, retract, and flicker effects.',
+        'Addressable RGB blade with animated ignite, retract, flicker, and clash effects.',
         'IMU-driven motion detection triggering swing and clash sound/light effects.',
         'Onboard audio playback synchronized to blade state.',
-        'Machined aluminum hilt housing the battery, MCU, and speaker.',
+        'Machined aluminum hilt fully housing the battery, MCU, speaker, and other circuitry.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Electronics', detail: 'Selected the MCU, LED strip, IMU, and audio parts and prototyped the circuit.' },
-        { phase: 'Phase 2', title: 'Blade firmware', detail: 'Wrote the addressable-LED animations for ignite, retract, and idle flicker.' },
-        { phase: 'Phase 3', title: 'Motion effects', detail: 'Added IMU-based swing and clash detection driving synchronized light and sound.' },
-        { phase: 'Phase 4', title: 'Hilt fabrication', detail: 'Machined the aluminum hilt and integrated the electronics into the assembly.' },
+        { phase: 'Week 1', title: 'Electronics', detail: 'Selected the MCU, LED strip, IMU, and audio parts and prototyped the critical circuits.' },
+        { phase: 'Week 1-2', title: 'Fabrication and Construction', detail: 'Machined the aluminum hilt and integrated the electronics into the assembly. Assembled the final circuit.' },
+        { phase: 'Week 2', title: 'Blade firmware', detail: 'Wrote the addressable-LED animations for ignite, retract, and idle flicker.' },
+        { phase: 'Week 4', title: 'Motion effects', detail: 'Added and tuned IMU-based swing and clash detection driving synchronized light and sound.' },
       ],
       report: { title: 'Project Report', file: 'files/lightsaber.pdf', pages: '17 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/programmable-lightsaber/1.jpg', caption: 'Addressable RGB blade during an ignite animation.' },
-        { src: 'media/programmable-lightsaber/2.jpg', caption: 'Machined aluminum hilt with internal electronics.' },
-        { src: 'media/programmable-lightsaber/3.jpg', caption: 'MCU, IMU, and audio board prototype wiring.' },
-        { src: 'media/programmable-lightsaber/4.jpg', caption: 'Assembled saber powered on in a dark room.' },
+        { src: 'images/lightsaber/lightsaber schematic.png', caption: 'Fritzing schematic of the final design. The large cap on the audo player stopped voltage sag from the LEDs from affecting the audio quality.' },
+        { src: 'images/lightsaber/IMU communication oscope.png', caption: 'Oscope signal data from the IMU\'s I2C communication while playing audio. See the report for more detailed signal data and analysis.' },
+        { src: 'images/lightsaber/lightsaber swinging data.png', caption: 'IMU data used to characterize swinging motions.' },
+        { src: 'images/lightsaber/lightsaber striking data.png', caption: 'IMU data used to characterize striking motions. This allowed us to tune the audio effects based on swing speed thresholds.' },
       ],
     videos: [  
-          {
-             youtubeId: 'ewV28aPC_g0', // your YouTube video ID
-             caption: 'Ryan showing off the completed saber!',
-          },
           {
              youtubeId: 'J2BTiwhTlY4', // your YouTube video ID
              caption: 'The internals of the lightsaber\'s circuitry.',
           },
-      ],    },
+             {
+             youtubeId: 'ewV28aPC_g0', // your YouTube video ID
+             caption: 'Ryan showing off the completed saber!',
+          },
+      ],   
+    },
+
+    
     {
       id: 'origami-swimmer',
       index: '07',
