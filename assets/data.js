@@ -304,7 +304,7 @@ window.PORTFOLIO = {
         { src: 'images/trucklab/ilqr diagram.png', caption: 'iLQR logic loop diagram. Note the sequencing of the forward pass line search and backwards pass policy calculation.' },
         { src: 'images/trucklab/ros nodes architecture.png', caption: 'ROS2 nodes architecture. The safety filter node acts as the core of the logic block, using branch nodes to localize the track, predict system dynamics, and estimate actuation error.' },
       ],
-      video: { src: 'media/trucklvideos: [  
+      video: [  
           {
              youtubeId: 'RCPHTLpMS2Y', // your YouTube video ID
              caption: 'The second-layer iLQR algorithm works as an effective self-driving algorithm without obstacles on the track.',
@@ -319,7 +319,7 @@ window.PORTFOLIO = {
           },
           {
              youtubeId: '7KZxNe5Iyiw', // your YouTube video ID
-             caption: 'Our full self-driving ILQR algorithm attempts to drive around the obstacle. It\s a little tentative to leave the roadlines, but eventually makes the decision to drive over the lines and around obstacle.',
+             caption: 'Our full self-driving ILQR algorithm attempts to drive around the obstacle. It\'s a little tentative to leave the roadlines, but eventually makes the decision to drive over the lines and around obstacle.',
           },
       ],  
     },
