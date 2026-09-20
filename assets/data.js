@@ -40,7 +40,7 @@ window.PORTFOLIO = {
     {
       id: 'flying-fish',
       index: '01',
-      title: 'Bioinspired Flying Fish RMO',
+      title: 'Bioinspired Flying Fish RMO (In Progress)',
       summary:
         'A Robotic Model Organism (RMO) inspired by Exocotidae flying fish, able to swim in 3 DOF, actuate pectoral fins in 2 DOF, and remotely transmit live telemetry data for experimental analysis.',
       image: 'images/flying-fish/FishOpen.jpg',
@@ -107,7 +107,7 @@ window.PORTFOLIO = {
       {
       id: 'pocketqube-satellite',
       index: '02',
-      title: 'TigerCub Satellite',
+      title: 'TigerCub Satellite (In Progress)',
       summary:
         'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
       image: 'images/sat/tigercub.jpg',
