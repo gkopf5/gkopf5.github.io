@@ -132,7 +132,7 @@ window.PORTFOLIO = {
       milestones: [
         { phase: 'Current Work', title: 'Deployable Retroreflector', detail: 'Currently designing and testing the custom PCB for a burn wire release deployable mechanism for radar cross sectional area.' },
         { phase: 'Next Steps', title: 'EPS Firmware', detail: 'Updating DynOSSAT-EDU firmware for charge management, rail sequencing, and low-power safe modes (tight pico-sat power budgeting).' },
-        { phase: 'Next Steps', title: 'Integration Test', detail: 'Integrating EPS with the avionics stack (Onboard computing, science payload, comm systems) and validating power modes under simulated load.' },
+        { phase: 'Next Steps', title: 'Integration Test', detail: 'Integrating EPS with the avionics stack (onboard computing, science payload, comm systems) and validating power modes under simulated load.' },
       ],
       report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
