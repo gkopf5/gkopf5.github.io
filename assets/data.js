@@ -101,12 +101,50 @@ window.PORTFOLIO = {
            caption: 'Actuation of pectoral fins to induce turning - note how the waterproofing material limits the pectoral fins\' ranges of motion. This is the first thing to fix in the next model!',
           },
       ],
+    },
 
+
+      {
+      id: 'pocketqube-satellite',
+      index: '02',
+      title: 'TigerCub Satellite',
+      summary:
+        'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
+      image: 'images/sat/tigercub.jpg',
+      tags: ['Aerospace', 'PCB', 'Power', 'RF'],
+      specs: [
+        { label: 'Format', value: '1P PocketQube' },
+        { label: 'Downlink', value: 'Iridium Satellite Network' },
+        { label: 'Microcontroller', value: 'Teensy 4.0 & ATSAMD21E18' },
+      ],
+      timeline: 'Fall 2026 - Spring 2027 · Student team',
+      role: 'Deployable Burnwire Module, EPS firmware',
+      overview: [
+        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
+        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
+      ],
+      highlights: [
+        'Deployable retroreflector for crosssectional radar standards.',
+        'Regulated multi-rail bus feeding the stacked avionics boards.',
+        'EPS firmware that manages power modes across orbital eclipse and sunlight.',
+        'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
+      ],
+      milestones: [
+        { phase: 'Current Work', title: 'Deployable Retroreflector', detail: 'Currently designing and testing the custom PCB for a burn wire release deployable mechanism for radar cross sectional area.' },
+        { phase: 'Next Steps', title: 'EPS Firmware', detail: 'Updating DynOSSAT-EDU firmware for charge management, rail sequencing, and low-power safe modes (tight pico-sat power budgeting).' },
+        { phase: 'Next Steps', title: 'Integration Test', detail: 'Integrating EPS with the avionics stack (Onboard computing, science payload, comm systems) and validating power modes under simulated load.' },
+      ],
+      report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
+      gallery: [
+        { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Prototype burn wire PCB with triple-MOSFET inhibits.' },
+        { src: 'images/sat/BurnWirePCBV1.png', caption: 'PCB Layout of burn wire board.' },
+      ],
+      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
     
     {
       id: 'search-rescue-robot',
-      index: '02',
+      index: '03',
       title: 'Search and Rescue Robot',
       summary:
         'A Search and Rescue Robot (SaRR) designed to navigate through difficult environments and deliver a specific payload to a target. The SaRR is capable of navigating a 15 degree incline, breaching a 1 foot wall, and delivering a payload via closed loop sensor detection.',
@@ -166,7 +204,7 @@ window.PORTFOLIO = {
 
     {
       id: 'ostraciiform-swim',
-      index: '03',
+      index: '04',
       title: 'Ostraciiform Swim Gait Simulation & Optimization',
       summary:
         "A simulation study of boxfish-style ostraciiform swimming, coupling a hydrodynamic model with an Adjoint-Based Gradient Descent optimizer to find tail-beat gaits that maximize thrust efficiency.",
@@ -214,7 +252,7 @@ window.PORTFOLIO = {
     
     {
       id: 'carlab-navigation',
-      index: '04',
+      index: '05',
       title: 'CarLab: Robotics and Autonomous Systems Lab',
       summary:
         'As part of Junior design class ECE 302, this project involves autonomous controls for a sensor-equipped R/C car capable of PID speed control and autonomous line navigation.',
@@ -270,7 +308,7 @@ window.PORTFOLIO = {
     
     {
       id: 'trucklab-ilqr',
-      index: '05',
+      index: '06',
       title: 'TruckLab Self-Driving iLQR Algorithm',
       summary:
         'As part of ECE 346: Intelligent Robotics, we built and designed an iterative LQR trajectory optimizer for a scale R/C truck, with path planning and obstacle avoidance. ROS2 april tag localization runs a real-time localization and path planner on onboard compute.',
@@ -326,7 +364,7 @@ window.PORTFOLIO = {
 
     {
       id: 'programmable-lightsaber',
-      index: '06',
+      index: '07',
       title: 'Programmable Lightsaber',
       summary:
         'A programmable LED lightsaber with an addressable RGB blade, motion-reactive sound and lighting effects driven by an IMU, and a machined aluminum hilt.',
@@ -380,7 +418,7 @@ window.PORTFOLIO = {
     
     {
       id: 'origami-swimmer',
-      index: '07',
+      index: '08',
       title: 'Bioinspired Origami Swimmer',
       summary:
         'A soft aquatic robot using an origami-folded fin structure that expands and contracts to generate thrust, exploring compliant folding mechanisms for underwater propulsion.',
@@ -459,43 +497,6 @@ window.PORTFOLIO = {
       video: { src: 'media/boomcoli-igem/demo.mp4', caption: 'Walkthrough of the instrumentation and data pipeline supporting the wet lab.' },
     },
 
-      {
-      id: 'pocketqube-satellite',
-      index: '09',
-      title: 'Upcoming Project: TigerCub Satellite',
-      summary:
-        'A 5 cm-class PocketQube pico-satellite with a stacked custom-PCB avionics bus, solar power harvesting, and a novel Iridium RockBLOCK antenna.',
-      image: 'images/sat/tigercub.jpg',
-      tags: ['Aerospace', 'PCB', 'Power', 'RF'],
-      specs: [
-        { label: 'Format', value: '1P PocketQube' },
-        { label: 'Downlink', value: 'Iridium Satellite Network' },
-        { label: 'Microcontroller', value: 'Teensy 4.0 & ATSAMD21E18' },
-      ],
-      timeline: 'Fall 2026 - Spring 2027 · Student team',
-      role: 'Deployable Burnwire Module, EPS firmware',
-      overview: [
-        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
-        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
-      ],
-      highlights: [
-        'Deployable retroreflector for crosssectional radar standards.',
-        'Regulated multi-rail bus feeding the stacked avionics boards.',
-        'EPS firmware that manages power modes across orbital eclipse and sunlight.',
-        'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
-      ],
-      milestones: [
-        { phase: 'Phase 1', title: 'Power architecture', detail: 'Defined the EPS architecture and modeled the orbital power budget across eclipse cycles.' },
-        { phase: 'Phase 2', title: 'Board design', detail: 'Designed the solar-harvesting and regulation PCB to fit the PocketQube stack.' },
-        { phase: 'Phase 3', title: 'EPS firmware', detail: 'Wrote firmware for charge management, rail sequencing, and low-power safe modes.' },
-        { phase: 'Phase 4', title: 'Integration test', detail: 'Integrated with the avionics stack and validated power modes under simulated load.' },
-      ],
-      report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
-      gallery: [
-        { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Prototype burn wire PCB with triple-MOSFET inhibits.' },
-        { src: 'images/sat/BurnWireV1.png', caption: 'PCB Layout of burn wire board.' },
-      ],
-      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
-    },
+    
   ],
 }
