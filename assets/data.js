@@ -492,10 +492,8 @@ window.PORTFOLIO = {
       ],
       report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
-        { src: 'media/pocketqube-satellite/1.jpg', caption: 'Prototype burnwire PCB with triple-MOSFET switch.' },
-        //{ src: 'media/pocketqube-satellite/2.jpg', caption: 'Solar-harvesting and power board close-up.' },
-        //{ src: 'media/pocketqube-satellite/3.jpg', caption: 'Bench setup validating power modes under simulated load.' },
-        //{ src: 'media/pocketqube-satellite/4.jpg', caption: 'Fully integrated 1P PocketQube ready for test.' },
+        { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Prototype burn wire PCB with triple-MOSFET inhibits.' },
+        { src: 'images/sat/BurnWireV1.png', caption: 'PCB Layout of burn wire board.' },
       ],
       video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
