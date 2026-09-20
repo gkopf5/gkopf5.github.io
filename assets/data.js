@@ -456,46 +456,7 @@ window.PORTFOLIO = {
       ],
       video: { src: 'media/origami-swimmer/demo.mp4', caption: 'Origami fin folding through a full swimming stroke underwater.' },
     },
-    {
-      id: 'boomcoli-igem',
-      index: '08',
-      title: 'Bioengineering BOOMcoli for iGEM',
-      summary:
-        'An iGEM synthetic-biology project engineering E. coli ("BOOMcoli") with a designed genetic circuit, including the wet-lab work and the supporting hardware and data tooling.',
-      image: 'projects/boomcoli-igem.png',
-      tags: ['Synthetic Biology', 'iGEM', 'Lab', 'Data'],
-      specs: [
-        { label: 'Chassis', value: 'E. coli' },
-        { label: 'Team', value: 'iGEM' },
-        { label: 'Scope', value: 'Circuit + tooling' },
-      ],
-      timeline: '2023 · iGEM competition',
-      role: 'Hardware & data, wet-lab support',
-      overview: [
-        'A synthetic-biology project for the iGEM competition, engineering E. coli — nicknamed "BOOMcoli" — with a custom genetic circuit designed by the team. As an EE on a mostly bio team, I bridged the wet lab and the instrumentation.',
-        'I built supporting hardware and data tooling: instrumentation to run and monitor experiments, and the pipeline to log and analyze the resulting measurement data alongside the wet-lab work.',
-      ],
-      highlights: [
-        'Custom instrumentation supporting the wet-lab experimental protocol.',
-        'Data-logging and analysis pipeline for experiment measurements.',
-        'Cross-disciplinary work bridging electrical hardware and molecular biology.',
-        'Contributed to the team iGEM submission and presentation.',
-      ],
-      milestones: [
-        { phase: 'Phase 1', title: 'Project scoping', detail: 'Worked with the bio team to define the genetic circuit goal and the hardware it needed.' },
-        { phase: 'Phase 2', title: 'Instrumentation', detail: 'Built the hardware to run and monitor the experiments in the lab.' },
-        { phase: 'Phase 3', title: 'Data pipeline', detail: 'Set up logging and analysis for the experimental measurement data.' },
-        { phase: 'Phase 4', title: 'iGEM submission', detail: 'Compiled results and contributed to the team submission and presentation.' },
-      ],
-      report: { title: 'iGEM Project Report', file: 'reports/boomcoli-igem.pdf', pages: '28 pages', size: 'PDF' },
-      gallery: [
-        { src: 'media/boomcoli-igem/1.jpg', caption: 'Custom instrumentation for running experiments.' },
-        { src: 'media/boomcoli-igem/2.jpg', caption: 'Wet-lab session monitoring the engineered E. coli.' },
-        { src: 'media/boomcoli-igem/3.jpg', caption: 'Data-logging pipeline dashboard for measurements.' },
-        { src: 'media/boomcoli-igem/4.jpg', caption: 'Team at the iGEM presentation.' },
-      ],
-      video: { src: 'media/boomcoli-igem/demo.mp4', caption: 'Walkthrough of the instrumentation and data pipeline supporting the wet lab.' },
-    },
+
 
     
   ],
