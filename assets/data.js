@@ -423,7 +423,7 @@ window.PORTFOLIO = {
       summary:
         'A soft aquatic robot using an origami-folded Kresling structure that expands and contracts, translating rotational actuation into linear motion, exploring compliant folding mechanisms for underwater propulsion.',
       image: 'images/origami/robot_compact.jpg',
-      tags: ['Soft Robotics', 'Origami', 'Actuators', 'Prototyping'],
+      tags: ['Soft Robotics', 'Origami', 'Novel Mechanism', 'Prototyping'],
       specs: [
         { label: 'Role', value: 'Four Person Project Team' },
         { label: 'Structure', value: 'Kresling Origami Metamaterial' },
@@ -434,7 +434,7 @@ window.PORTFOLIO = {
       role: 'Mechanism & Electrical design, testing, simulation',
       overview: [
         "As part of CEE 345: Origami Engineering with Professor Glaucio Paulino, I worked in a group of 4 people on an 3-week project to create an engineering project utilizing the unique toolkit provided by origami structures. Our project ended up being the design and construction of a bioinspired swimmer. The salp (salpidae) is a gelatinous marine invertebrate related to jellyfish. They move through the water using a propulsion system where they contract and relax muscle bands that ring their bodies. Inspired by these creatures, our project aimed to replicate this kind of movement with the bistable snapping of Kresling tubes to create an efficient model water propulsion system for robotic applications.",
-        "My main focus was on building and waterproofing the electrical system. However, in such a small group we naturally ended up working together heavily, including mechanical prototyping of the shaft, origami materials testing, and simulation software work.",
+        "My main focus was on building the electrical actuation. However, in such a small group we naturally ended up working together heavily, and my component was completed rather quickly, leaving me to overlap on mechanical prototyping of the shaft, origami materials testing, and simulation software work.",
       ],
       highlights: [
         'Origami crease patterns that convert rotational actuation into volume change, causing a propulsive swimming stroke.',
@@ -445,7 +445,7 @@ window.PORTFOLIO = {
         { phase: 'Week 1', title: 'Robot Design', detail: 'Designed candidate Kresling actuation methods.' },
         { phase: 'Week 2', title: 'Materials Prototyping', detail: 'Prototyped materials for Kresling construction.' },
         { phase: 'Week 2-3', title: 'Actuation', detail: 'Built arduino-driven servo actuator and 3D printed body components.' },
-        { phase: 'Week 4', title: 'Assembly and Testing', detail: 'Assembled final product and tested in water.' },
+        { phase: 'Week 4', title: 'Assembly and Testing', detail: 'Assembled final product and tested functionality.' },
       ],
       reports: [
         { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' },
