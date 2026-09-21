@@ -428,9 +428,10 @@ window.PORTFOLIO = {
         { label: 'Role', value: 'Four Person Project Team' },
         { label: 'Structure', value: 'Kresling Origami Metamaterial' },
         { label: 'Actuation', value: 'Rotational to Linear Transfer' },
+        { label: 'Microcontroller', value: 'Arduino Nano' },
       ],
-      timeline: 'Spring 2023 · Research project',
-      role: 'Mechanism design, testing',
+      timeline: 'Fall 2025 · Lab project',
+      role: 'Mechanism & Electrical design, testing, simulation',
       overview: [
         "As part of CEE 345: Origami Engineering with Professor Glaucio Paulino, I worked in a group of 4 people on an 3-week project to create an engineering project utilizing the unique toolkit provided by origami structures. Our project ended up being the design and construction of a bioinspired swimmer. The salp (salpidae) is a gelatinous marine invertebrate related to jellyfish. They move through the water using a propulsion system where they contract and relax muscle bands that ring their bodies. Inspired by these creatures, our project aimed to replicate this kind of movement with the bistable snapping of Kresling tubes to create an efficient model water propulsion system for robotic applications.",
         "My main focus was on building and waterproofing the electrical system. However, in such a small group we naturally ended up working together heavily, including mechanical prototyping of the shaft, origami materials testing, and simulation software work.",
@@ -441,10 +442,10 @@ window.PORTFOLIO = {
         'Kresling simulation and volume tracking software.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Robot Design', detail: 'Designed candidate Kresling actuation methods.' },
-        { phase: 'Phase 2', title: 'Prototyping', detail: 'Built compliant folded fin prototypes from patterned sheet materials.' },
-        { phase: 'Phase 3', title: 'Actuation', detail: 'Integrated actuation to drive the fold cycle and produce a swimming stroke.' },
-        { phase: 'Phase 4', title: 'Thrust testing', detail: 'Measured thrust in a test tank and compared fold geometries for performance.' },
+        { phase: 'Week 1', title: 'Robot Design', detail: 'Designed candidate Kresling actuation methods.' },
+        { phase: 'Week 2', title: 'Materials Prototyping', detail: 'Prototyped materials for Kresling construction.' },
+        { phase: 'Week 2-3', title: 'Actuation', detail: 'Built arduino-driven servo actuator and 3D printed body components.' },
+        { phase: 'Week 4', title: 'Assembly and Testing', detail: 'Assembled final product and tested in water.' },
       ],
       reports: [
         { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' },
