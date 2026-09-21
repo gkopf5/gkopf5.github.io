@@ -449,7 +449,7 @@ window.PORTFOLIO = {
       ],
       reports: [
         { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' },
-        { title: 'Project Report', file: 'files/origami_report.pdf', pages: '22 pages', size: 'PDF' },
+        { title: 'Project Report', file: 'files/CEE 345 Final Report.pdf', pages: '22 pages', size: 'PDF' },
       ],
       
       gallery: [
@@ -462,7 +462,7 @@ window.PORTFOLIO = {
         { src: 'images/origami/robot_compact.jpg', caption: 'Compacted configuration of the robot (smaller volume).' },
         { src: 'images/origami/robot_expanded.jpg', caption: "Expanded configuration of the robot (larger volume)." },
       ],
-      video: { src: 'images/origami/kresling_vid.mp4', caption: 'Kresling structure folding example.' },
+      video: { src: 'images/origami/kresling_vid.mp4', caption: 'Kresling structure folding example' },
     },
 
 
