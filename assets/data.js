@@ -433,24 +433,24 @@ window.PORTFOLIO = {
       role: 'Mechanism design, testing',
       overview: [
         "As part of CEE 345: Origami Engineering with Professor Glaucio Paulino, I worked in a group of 4 people on an 3-week project to create an engineering project utilizing the unique toolkit provided by origami structures. Our project ended up being the design and construction of a bioinspired swimmer. The salp (salpidae) is a gelatinous marine invertebrate related to jellyfish. They move through the water using a propulsion system where they contract and relax muscle bands that ring their bodies. Inspired by these creatures, our project aimed to replicate this kind of movement with the bistable snapping of Kresling tubes to create an efficient model water propulsion system for robotic applications.",
-        "My main focus was on designing and waterproofing the electrical system. However, in such a small group we naturally ended up working together heavily, so I did a lot of mechanical prototyping of the shaft and origami materials testing.",
+        "My main focus was on building and waterproofing the electrical system. However, in such a small group we naturally ended up working together heavily, including mechanical prototyping of the shaft, origami materials testing, and simulation software work.",
       ],
       highlights: [
-        'Origami crease patterns that convert simple actuation into a swimming stroke.',
-        'Compliant, jointless fin structure that folds to displace water.',
-        'Several fold geometries prototyped and compared for thrust.',
-        'Thrust measured in a test tank to link fold pattern to performance.',
+        'Origami crease patterns that convert rotational actuation into volume change, causing a propulsive swimming stroke.',
+        'Compliant origami structure uses Kresling geometry as a mechanical metamaterial.',
+        'Kresling simulation and volume tracking software.',
       ],
       milestones: [
-        { phase: 'Phase 1', title: 'Fold design', detail: 'Designed candidate origami crease patterns and modeled their folding motion.' },
+        { phase: 'Phase 1', title: 'Robot Design', detail: 'Designed candidate Kresling actuation methods.' },
         { phase: 'Phase 2', title: 'Prototyping', detail: 'Built compliant folded fin prototypes from patterned sheet materials.' },
         { phase: 'Phase 3', title: 'Actuation', detail: 'Integrated actuation to drive the fold cycle and produce a swimming stroke.' },
         { phase: 'Phase 4', title: 'Thrust testing', detail: 'Measured thrust in a test tank and compared fold geometries for performance.' },
       ],
       reports: [
-        { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' }
+        { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' },
         { title: 'Project Report', file: 'files/origami_report.pdf', pages: '22 pages', size: 'PDF' },
       ],
+      
       gallery: [
         { src: 'images/origami/OrigamiDesign.png', caption: "Initial sketch designs of our origami swimmer. The Kresling structure translates rotational motion into linear extension (and a subsequent increase in volume)." },
         { src: 'images/origami/OrigamiVolume.png', caption: "We built a program to generate volume simulations of the Kresling structure as it actuated, allowing us to calculate water displacement with each stroke." },
