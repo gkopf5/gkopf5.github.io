@@ -120,19 +120,21 @@ window.PORTFOLIO = {
       timeline: 'Fall 2026 - Spring 2027 · Student team',
       role: 'Deployable Burnwire Module, EPS firmware',
       overview: [
-        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. As one of the only Electrical Engineers on the team, my role in the upcoming semester is to fix existing firmware issues with the DynOSSAT-EPS board curently being used.',
-        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter.",
+        'TigerCub is Princeton\'s PocketQube-class pico-satellite — a 5 cm cube that is an eigth the size of a CubeSat — built as a low-cost platform for an orbital technology demonstration. The whole spacecraft is a stack of PCBs sharing a custom PQ10 bus. I joined the project as part of Princeton\'s new class MAE 348 this semester, so work is ongoing. There are not many electrical engineers on our team, so I have been given multiple broad roles. My main role in the upcoming semester is to debug existing firmware issues with the DynOSSAT-EPS board currently being used.',
+        "In order to achieve radar-visibility, our satellite needs to increase its cross sectional area. I am also designing and testing the custom PCB for the burnwire module, which involves a triple-MOSFET switch for redundancy and a nichrome wire cutter, as well as assisting with the design and soldering of our scientific payload module, BitFlipper.",
       ],
       highlights: [
         'Deployable retroreflector for crosssectional radar standards.',
         'Regulated multi-rail bus feeding the stacked avionics boards.',
         'EPS firmware that manages power modes across orbital eclipse and sunlight.',
+        "BitFlipper - TigerSat's scientific payload module studying the rad hardness of a suite of commerical RAM chips.",
         'Iridium RockBLOCK antenna module for a novel downlink approach in PocketQube sats.',
       ],
       milestones: [
         { phase: 'Current Work', title: 'Deployable Retroreflector', detail: 'Currently designing and testing the custom PCB for a burn wire release deployable mechanism for radar cross sectional area.' },
-        { phase: 'Next Steps', title: 'EPS Firmware', detail: 'Updating DynOSSAT-EDU firmware for charge management, rail sequencing, and low-power safe modes (tight pico-sat power budgeting).' },
-        { phase: 'Next Steps', title: 'Integration Test', detail: 'Integrating EPS with the avionics stack (onboard computing, science payload, comm systems) and validating power modes under simulated load.' },
+        { phase: 'Current Work', title: 'EPS Firmware', detail: 'Updating DynOSSAT-EDU firmware for charge management, rail sequencing, and low-power safe modes (tight pico-sat power budgeting).' },
+        { phase: 'Next Steps', title: 'Scientific Payload', detail: 'Finalizing design and assembling BitFlipper module.' },
+        { phase: 'Next Steps', title: 'Integration Testing', detail: 'Integrating EPS with the avionics stack (onboard computing, science payload, comm systems) and validating power modes under simulated load.' },
       ],
       report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
