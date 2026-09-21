@@ -422,7 +422,7 @@ window.PORTFOLIO = {
       title: 'Bioinspired Origami Swimmer',
       summary:
         'A soft aquatic robot using an origami-folded Kresling structure that expands and contracts, translating rotational actuation into linear motion, exploring compliant folding mechanisms for underwater propulsion.',
-      image: 'projects/origami-swimmer.png',
+      image: 'images/origami/robot_compact.jpg',
       tags: ['Soft Robotics', 'Origami', 'Actuators', 'Prototyping'],
       specs: [
         { label: 'Role', value: 'Four Person Project Team' },
