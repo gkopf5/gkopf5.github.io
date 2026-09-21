@@ -421,19 +421,19 @@ window.PORTFOLIO = {
       index: '08',
       title: 'Bioinspired Origami Swimmer',
       summary:
-        'A soft aquatic robot using an origami-folded fin structure that expands and contracts to generate thrust, exploring compliant folding mechanisms for underwater propulsion.',
+        'A soft aquatic robot using an origami-folded Kresling structure that expands and contracts, translating rotational actuation into linear motion, exploring compliant folding mechanisms for underwater propulsion.',
       image: 'projects/origami-swimmer.png',
       tags: ['Soft Robotics', 'Origami', 'Actuators', 'Prototyping'],
       specs: [
-        { label: 'Structure', value: 'Origami fold' },
-        { label: 'Actuation', value: 'Compliant' },
-        { label: 'Domain', value: 'Underwater' },
+        { label: 'Role', value: 'Four Person Project Team' },
+        { label: 'Structure', value: 'Kresling Origami Metamaterial' },
+        { label: 'Actuation', value: 'Rotational to Linear Transfer' },
       ],
       timeline: 'Spring 2023 · Research project',
       role: 'Mechanism design, testing',
       overview: [
-        'A bioinspired soft swimmer that uses an origami-folded fin to produce thrust. Folding the patterned structure changes its shape and displaces water, so a simple actuation input becomes a swimming stroke without rigid linkages.',
-        'The project explored how fold geometry maps to thrust — designing crease patterns, building compliant prototypes, and measuring how each fold pattern swims.',
+        "As part of CEE 345: Origami Engineering with Professor Glaucio Paulino, I worked in a group of 4 people on an 3-week project to create an engineering project utilizing the unique toolkit provided by origami structures. Our project ended up being the design and construction of a bioinspired swimmer. The salp (salpidae) is a gelatinous marine invertebrate related to jellyfish. They move through the water using a propulsion system where they contract and relax muscle bands that ring their bodies. Inspired by these creatures, our project aimed to replicate this kind of movement with the bistable snapping of Kresling tubes to create an efficient model water propulsion system for robotic applications.",
+        "My main focus was on designing and waterproofing the electrical system. However, in such a small group we naturally ended up working together heavily, so I did a lot of mechanical prototyping of the shaft and origami materials testing.",
       ],
       highlights: [
         'Origami crease patterns that convert simple actuation into a swimming stroke.',
@@ -447,14 +447,21 @@ window.PORTFOLIO = {
         { phase: 'Phase 3', title: 'Actuation', detail: 'Integrated actuation to drive the fold cycle and produce a swimming stroke.' },
         { phase: 'Phase 4', title: 'Thrust testing', detail: 'Measured thrust in a test tank and compared fold geometries for performance.' },
       ],
-      report: { title: 'Design & Test Report', file: 'reports/origami-swimmer.pdf', pages: '16 pages', size: 'PDF' },
-      gallery: [
-        { src: 'media/origami-swimmer/1.jpg', caption: 'Origami crease pattern for the folding fin.' },
-        { src: 'media/origami-swimmer/2.jpg', caption: 'Compliant folded fin prototype.' },
-        { src: 'media/origami-swimmer/3.jpg', caption: 'Actuation driving the fold cycle.' },
-        { src: 'media/origami-swimmer/4.jpg', caption: 'Thrust measurement setup in the test tank.' },
+      reports: [
+        { title: 'Project Poster', file: 'images/origami/CEE 345 Final Poster.pptx.pdf', pages: 'Poster', size: 'PDF' }
+        { title: 'Project Report', file: 'files/origami_report.pdf', pages: '22 pages', size: 'PDF' },
       ],
-      video: { src: 'media/origami-swimmer/demo.mp4', caption: 'Origami fin folding through a full swimming stroke underwater.' },
+      gallery: [
+        { src: 'images/origami/OrigamiDesign.png', caption: "Initial sketch designs of our origami swimmer. The Kresling structure translates rotational motion into linear extension (and a subsequent increase in volume)." },
+        { src: 'images/origami/OrigamiVolume.png', caption: "We built a program to generate volume simulations of the Kresling structure as it actuated, allowing us to calculate water displacement with each stroke." },
+        { src: 'images/origami/salp_cad.png', caption: "CAD model of the robot." },
+        { src: 'images/origami/OrigamiMold.png', caption: "Testing different materials for our Kresling structure. We ultimately decided even the stiffest silicones didn't have the structural integrity to replicate the Kresling's bistable nature." },
+        { src: 'images/origami/lasercut.jpg', caption: 'Lasercutting the Kresling creaselines into PETG sheets for ease of folding.' },
+        { src: 'images/origami/kreslings.jpg', caption: "Updated Kresling prototypes from various thicknesses of PETG sheet (in order: 0.0075, 0.005, 0.001 in). We ultimately decided the 0.005 in sheet was the best, as it was important for the servo motor to have enough torque to actuate the Kresling structure between its two bistable states."},
+        { src: 'images/origami/robot_compact.jpg', caption: 'Compacted configuration of the robot (smaller volume).' },
+        { src: 'images/origami/robot_expanded.jpg', caption: "Expanded configuration of the robot (larger volume)." },
+      ],
+      video: { src: 'images/origami/kresling_vid.mp4', caption: 'Kresling structure folding example.' },
     },
 
 
