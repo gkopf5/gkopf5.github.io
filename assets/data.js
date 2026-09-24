@@ -139,7 +139,7 @@ window.PORTFOLIO = {
       report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
         { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Prototype burn wire PCB with triple-MOSFET inhibits.' },
-        { src: 'images/sat/PCBV1.png', caption: 'PCB Layout of burn wire board.' },
+        { src: 'images/sat/PCBV2.png', caption: 'PCB Layout of burn wire board.' },
       ],
       video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
