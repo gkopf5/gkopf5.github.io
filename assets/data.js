@@ -138,9 +138,9 @@ window.PORTFOLIO = {
       ],
       report: { title: 'N/A', file: 'reports/pocketqube-satellite.pdf', pages: '0 pages', size: 'PDF' },
       gallery: [
-        { src: 'images/sat/CAD1.png', caption: 'Top CAD Assembly of the TigerSat.' },
-        { src: 'images/sat/CAD2.png', caption: 'A look into the current belly of the beast. See the Coms module, EPS module, and avionics computer board.' },
-        { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Prototype burn wire PCB with triple-MOSFET inhibits.' },
+        { src: 'images/sat/CAD1.png', caption: 'CREO Top Assembly CAD of TigerCub.' },
+        { src: 'images/sat/CAD2.png', caption: 'A look into the current belly of the beast. From top to bottom are the Coms, EPS, and OBC modules.' },
+        { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Simple burn wire PCB schematic with triple-MOSFET inhibits.' },
         { src: 'images/sat/PCBV2.png', caption: 'PCB Layout of burn wire board.' },
       ],
       video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
