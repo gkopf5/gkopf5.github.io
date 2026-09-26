@@ -6,7 +6,7 @@ window.PORTFOLIO = {
     status: 'Princeton University · Class of 2027 · Electrical & Computer Engineering · Minor in Robotics',
     location: 'Princeton, NJ',
     intro:
-      "I'm a senior at Princeton University with a minor in Robotics, focusing on interdisciplinary robotics and controls engineering involving the electrical, mechanical, and biological. My passion is for all things that climb, swim, fly, and even orbit!",
+      "I'm a senior in Electrical & Computer Engineering at Princeton University with a minor in Robotics, focusing on interdisciplinary robotics and controls engineering involving the electrical, mechanical, and biological. My passion is for all things that climb, swim, fly, and even orbit!",
     email: 'georgekopf5@gmail.com',
     portrait: 'media/portrait.jpg',
     phoneDisplay: '(609) 608-2119',
