@@ -28,7 +28,7 @@ window.PORTFOLIO = {
     },
     {
       title: 'Modeling & Tools',
-      items: ['MATLAB', 'Python & Java', 'CAD (Solidworks, Fusion, NX)', 'Circuits (LTspice, Plecs, Altium, EasyEda, KiCad)', 'Adjoint-Based Gradient Descent Optimization'],
+      items: ['MATLAB', 'Python & Java', 'CAD (Solidworks, Fusion, NX)', 'Circuits (LTspice, Plecs, Altium, EasyEda, KiCad, Verilog)', 'Adjoint-Based Gradient Descent Optimization'],
     },
     {
       title: 'Hardware',
