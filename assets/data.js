@@ -141,7 +141,7 @@ window.PORTFOLIO = {
         { src: 'images/sat/CAD1.png', caption: 'CREO Top Assembly CAD of TigerCub.' },
         { src: 'images/sat/CAD2.png', caption: 'A look into the current belly of the beast. From top to bottom are the Coms, EPS, and OBC modules.' },
         { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Simple burn wire PCB schematic with triple-MOSFET inhibits.' },
-        { src: 'images/sat/PCBV2.png', caption: 'PCB Layout of burn wire board.' },
+        { src: 'images/sat/PCBV1_2.png', caption: 'PCB Layout of burn wire board.' },
       ],
       video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
     },
