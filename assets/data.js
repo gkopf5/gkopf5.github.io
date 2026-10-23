@@ -13,7 +13,7 @@ window.PORTFOLIO = {
     phoneHref: 'tel:+16096082119',
     links: {
       linkedin: 'https://linkedin.com/in/george-kopf-v-a0b895270',
-      resume: 'files/resume.pdf',
+      resume: 'files/Kopf_CV.pdf',
     },
   },
 
