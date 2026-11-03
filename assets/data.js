@@ -143,7 +143,7 @@ window.PORTFOLIO = {
         { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Simple burn wire PCB schematic with triple-MOSFET inhibits.' },
         { src: 'images/sat/PCBV1_2.png', caption: 'PCB Layout of burn wire board.' },
       ],
-      video: { src: 'media/pocketqube-satellite/demo.mp4', caption: '' },
+      video: { src: 'images/sat/burnwirecutting.mp4', caption: "Testing of burn wire board against braided fishing line. Series resistance may need to be adjusted depending on thermal vacuum testing results."},
     },
     
     {
