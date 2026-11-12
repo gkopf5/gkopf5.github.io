@@ -142,6 +142,8 @@ window.PORTFOLIO = {
         { src: 'images/sat/CAD2.png', caption: 'A look into the current belly of the beast. From top to bottom are the Coms, EPS, and OBC modules.' },
         { src: 'images/sat/BurnWireSchematicV1.png', caption: 'Simple burn wire PCB schematic with triple-MOSFET inhibits.' },
         { src: 'images/sat/PCBV1_2.png', caption: 'PCB Layout of burn wire board.' },
+        { src: 'images/sat/DynoSSAT.png', caption: 'PCB Layout of EPS board.' },
+        { src: 'images/sat/DynoSSAT Render.png', caption: '3D Render of EPS board.' },
       ],
       video: { src: 'images/sat/burnwirecutting.mp4', caption: "Testing of burn wire board against braided fishing line. Series resistance may need to be adjusted depending on thermal vacuum testing results."},
     },
